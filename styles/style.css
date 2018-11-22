@@ -203,7 +203,7 @@ th.black-type {
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   perspective-origin-x: 100%;
 }
 .parallax__layer {
