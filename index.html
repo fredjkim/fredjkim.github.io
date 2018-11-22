@@ -3,6 +3,7 @@
   <head>
     <title>Fred Kim Design</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link href="styles/hamburger.css" rel="stylesheet">
@@ -10,7 +11,7 @@
   </head>
 
   <body>
-    <!--Navbar-->
+    <!--Navbar
     <nav class="navbar", style="list-style: none;">
       <a class="logo" href="index.html"><img src="styles/icons/fk-logo.svg"></a>
       <div id="menuToggle">
@@ -25,6 +26,7 @@
         </ul>
       </div>
     </nav>
+  -->
 
     <!--parallax scrolling-->
     <div class="parallax">
@@ -42,11 +44,13 @@
 
 
         <!-- "Work" divider-->
-        <div class = "work-box">
+        <article class = "work-box">
           <h1 class = "header">Hey, what's good? I'm <span class="yellow">Fred</span>, a UX/UI Designer based in San Francisco. Design is how I make sense of the world.</h1>
-          <img src="styles/icons/thinker.svg" class = "work-icon">
-          <h2 class = "work-text">Work</h2>
-        </div>
+          <div id = "thinker">
+            <img src="styles/icons/thinker.svg">
+            <h2 class = "work-text">Work</h2>
+          </div>
+        </article>
 
         <!-- Project 1: Skylake-->
         <article class = "container pink">
@@ -54,18 +58,27 @@
               <h2 class= "proj-title">Skylake</h2>
               <h3 class = "proj-desc">Cloud. Clearer space, clearer vision.</h3>
               <img src="images/skylake-black.png" class = "proj-img">
-              <table align="center" class = "table-role-landing">
-                <tr>
-                  <th><img src="styles/icons/design-white.svg" class = "icon"></th>
-                  <th class = "border"><img src="styles/icons/research-white.svg" class = "icon"></th>
-                  <th><img src="styles/icons/research-white.svg" class = "icon"></th>
-                </tr>
-                <tr>
-                  <td class = "landing-cell">Designer</td>
-                  <td class = "border landing-cell">Researcher</td>
-                  <td class = "landing-cell">Brand Creator</td>
-                </tr>
-              </table>
+
+              <section class="row">
+                <div class="column">
+                  <img src="styles/icons/design-white.svg" class = "icon">
+                  <p class = "role-col">Design</p>
+                </div>
+                <div class="column center-col">
+                  <img src="styles/icons/research-white.svg" class = "icon">
+                  <p class = "role-col">Research</p>
+                </div>
+                <div class="column">
+                  <img src="styles/icons/research-white.svg" class = "icon">
+                  <p class = "role-col">Branding</p>
+                </div>
+              </section>
+
+
+
+
+
+
               <form>
                 <input class = "button-landing" type="button" value="See Case Study" onclick="window.location.href='project.html'" />
               </form>
@@ -80,13 +93,13 @@
               <img src="images/skylake-black.png" class = "proj-img">
               <table align="center" class = "table-role-landing">
                 <tr>
-                  <th class = "black-type"><img src="styles/icons/design-white.svg" class = "icon"></th>
-                  <th class = "border black-type"><img src="styles/icons/research-white.svg" class = "icon"></th>
-                  <th><img src="styles/icons/research-white.svg" class = "icon"></th>
+                  <th class = "black-type"><img src="styles/icons/design-white.svg" class = "role-col"></th>
+                  <th class = "border black-type"><img src="styles/icons/research-white.svg" class = "role-col"></th>
+                  <th><img src="styles/icons/research-white.svg" class = "role-col"></th>
                 </tr>
                 <tr>
                   <td class = "landing-cell black-type">Designer</td>
-                  <td class = "border landing-cell black-type">Researcher</td>
+                  <td class = "border black-type">Researcher</td>
                   <td class = "landing-cell black-type">Brand Creator</td>
                 </tr>
               </table>
@@ -101,17 +114,21 @@
             <div class = "proj-text">
               <h2 class= "proj-title">Project 3</h2>
               <h3 class = "proj-desc">Quick and insightful description</h3>
-              <img src="images/skylake-black.png" class = "proj-img">
+
+
+
+
+
               <table align="center" class = "table-role-landing">
                 <tr>
-                  <th><img src="styles/icons/design-white.svg" class = "icon"></th>
-                  <th class = "border"><img src="styles/icons/research-white.svg" class = "icon"></th>
-                  <th><img src="styles/icons/research-white.svg" class = "icon"></th>
+                  <th><img src="styles/icons/design-white.svg" class = "role-col"></th>
+                  <th class = "border"><img src="styles/icons/research-white.svg" class = "role-col"></th>
+                  <th><img src="styles/icons/research-white.svg" class = "role-col"></th>
                 </tr>
                 <tr>
-                  <td class = "landing-cell">Designer</td>
-                  <td class = "border landing-cell">Researcher</td>
-                  <td class = "landing-cell">Brand Creator</td>
+                  <td>Designer</td>
+                  <td class = "border">Researcher</td>
+                  <td>Brand Creator</td>
                 </tr>
               </table>
               <form>

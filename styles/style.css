@@ -58,19 +58,18 @@ body {
 
 .button-landing:focus {outline:0;}
 
-
 .button-landing {
   font-family: "RNSSanz-ExtraBold";
-  font-size: 3em;
+  font-size: 1.5em;
   color: #fffff0;
   cursor: pointer;
-  height: 120px;
+  height: 10%;
   width: 100%;
   background: transparent;
-  padding: 0.2em 1em;
+  padding: 3% 5%;
   border-radius: 0.2em;
   border: 0.12em solid #fffff0;
-  box-shadow: 0px 5px 1px rgba(0,0,0,0.4);
+  box-shadow: 0 .4em .1em rgba(0,0,0,0.4);
 }
 
 .button-landing.black-type {
@@ -136,34 +135,33 @@ th.black-type {
 
 }
 .landing-container {
-  height: 18%;
   background: #030303;
   overflow: hidden;
   margin: auto;
-  padding: 36px;
   text-align: left;
+  height: 20%;
 }
 
 .img-back {
   position: absolute;
   object-fit: cover;
-  width: 450px;
-  height: 450px;
-  top: 15%;
+  width: 40%;
+  height: 20%;
+  top: 7%;
   left: 50%;
-  margin-top: -225px;
-  margin-left: -225px;
+  margin-top: -10%;
+  margin-left: -20%;
 }
 
 .img-front {
   position: absolute;
   object-fit: cover;
-  width: 1000px;
-  height: 600px;
-  top: 15%;
+  width: 90%;
+  height: 23%;
+  top: 4%;
   left: 50%;
-  margin-top: -330px;
-  margin-left: -500px;
+  margin-top: -10%;
+  margin-left: -45%;
   opacity: 0.8;
 }
 
@@ -212,14 +210,15 @@ th.black-type {
 }
 
 .backimage {
-  margin-top: 55%;
-  margin-left: -20%;
+  margin-top: -50%;
+  margin-left: -150%;
 }
 
 .parallax {
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
+  overflow-y: scroll;
   perspective-origin-x: 100%;
 
 }
@@ -236,7 +235,7 @@ th.black-type {
   height: 100vh;
 }
 .parallax__layer--back {
-  transform: translateZ(-4px) scale(4);
+  transform: translateZ(-7px) scale(2);
 }
 
 
@@ -251,9 +250,9 @@ th.black-type {
 .header {
   position: relative;
   text-align: left;
-  font-size: 4.5em;
+  font-size: 2em;
   line-height: 1.4em;
-  margin: 30% 0;
+  margin: 10% 0;
 
 }
 
@@ -267,25 +266,27 @@ th.black-type {
 
 .work-box {
   text-align: center;
-  padding: 36px;
-  height: 1300px;
+  padding: 0 1em;
+  height: ;
 }
 
-.work-icon {
-  height: 200px;
-  margin-top: 5%;
+
+
+#thinker {
+  height: 10%;
+  padding: 20%;
 }
 
 .work-text {
   color: #FFC823;
-  font-size: 4em;
-  margin: 10px 0;
+  font-size: 2em;
+  margin: 0% 0 10% 0;
 }
 
 .container {
   position: relative;
   display: flex;
-  height: 1300px;
+  height: 80%;
   margin: 0 auto 15% auto;
 }
 
@@ -308,7 +309,8 @@ th.black-type {
 }
 
 .proj-text {
-  padding: 36px 36px;
+  padding: 1em;
+
   position: absolute;
   text-align: center;
   left: 0;
@@ -321,44 +323,99 @@ th.black-type {
 
 .proj-img {
   position: relative;
-  width: 140%;
-  left: -185px;
-  margin-bottom: -130px;
-  margin-top: 20px;
-
+  width: 120%;
+  left: -10%;
+  margin-bottom: -10%;;
 }
 
 
 .proj-title {
-  font-size: 5em;
+  font-size: 2em;
   margin: 0;
 }
 
 .proj-desc {
   font-family: "RNSSanz-Bold";
-  font-size: 3em;
+  font-size: 1em;
   margin: 0;
   margin-bottom: 20px;
-  line-height: 1em;
 }
 
-table.table-role-landing {
-  font-family: "Avenir";
-  font-size: 2em;
+
+
+.row {
+  position: relative;
   width: 100%;
-  padding: 20px 0;
+  height: 10%;
 }
 
+.column {
+    float: left;
+    text-align: center;
+    width: 33%;
+}
 
-.border {
-  border-left: 2px solid #fffff0;
-  border-right: 2px solid #fffff0;
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.center-col {
+  border-right: 1px solid #fffff0;
+  border-left: 1px solid #fffff0;
 
 }
 
 .icon {
-  height: 50px;
+  height: 1.5em;
 }
+
+.role-col {
+  text-align: center;
+}
+
+
+
+
+table {
+  font-family: "Avenir";
+  width: 100%;
+  padding: 0;
+}
+
+td {
+  width: 33%;
+  text-align: center;
+  font-family: "Avenir";
+  color: #fffff0;
+}
+
+th {
+  margin-bottom: 5%;
+}
+
+table.case-study-table {
+  width: 100%;
+  margin: 5% 0;
+  font-size: 1em;
+}
+
+th.case-table {
+  text-align: center;
+  font-family: "RNSSanz-ExtraBold";
+  font-size: 2em;
+  height: 70px;
+  color: #fffff0;
+}
+
+.border {
+  border-left: 1px solid #fffff0;
+  border-right: 1px solid #fffff0;
+
+}
+
+
 
 
 
@@ -484,36 +541,6 @@ img.is-selected {
 }
 
 
-table.case-study-table {
-  width: 100%;
-  margin: 5% 0;
-  font-size: 1em;
-}
-
-th.case-table {
-  text-align: center;
-  font-family: "RNSSanz-ExtraBold";
-  font-size: 2em;
-  height: 70px;
-  color: #fffff0;
-}
-
-
-td {
-  width: 200px;
-  text-align: center;
-  font-family: "Avenir";
-  font-size: 1.8em;
-  color: #fffff0;
-}
-
-td.landing-cell {
-  width: 200px;
-  text-align: center;
-  font-family: "Avenir";
-  font-size: 1em;
-  color: #fffff0;
-}
 
 
 
@@ -546,16 +573,16 @@ p {
 }
 
 footer {
-  height: 100px;
-  font-size: 3em;
+  height: 20%;;
+  font-size: 1.5em;
   margin: auto;
   text-align: center;
   line-height: 1.5em;
 }
 
 a.fa {
-  font-size: 50px;
-  padding: 30px;
+  font-size: 1em;
+  padding: 5%;
 }
 
 
