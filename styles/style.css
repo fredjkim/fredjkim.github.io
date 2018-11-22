@@ -32,26 +32,13 @@
 
 
 
-/* Scrollbar Styling */
-::-webkit-scrollbar {
-    width: 10px;
-}
 
-::-webkit-scrollbar-track {
-    background-color: #030303;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: #6d6d6d;
-}
 
 body {
   background-color: #030303;
   margin: 0;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .button-landing:focus {outline:0;}
@@ -209,7 +196,7 @@ th.black-type {
 
 .backimage {
   margin-top: -50%;
-  margin-left: -150%;
+  margin-left: -200%;
 }
 
 .parallax {
