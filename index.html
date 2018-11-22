@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fred Kim Design</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href="styles/hamburger.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <nav class="navbar", style="list-style: none;">
+      <a class="logo" href="index.html"><img src="styles/icons/fk-logo.svg"></a>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="#" class = "menu-item"><li>About</li></a>
+          <a href="#" class = "menu-item"><li>Resume</li></a>
+          <a href="#" class = "menu-item"><li>Contact</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <!--parallax scrolling-->
+    <div class="parallax">
+      <div class="parallax__layer parallax__layer--back">
+        <img src="images/backimage.png" class="backimage">
+      </div>
+
+      <section class = "proj-content parallax__layer parallax__layer--base">
+
+        <article class = "landing-container">
+          <img src="images/sun.gif" class="img-back">
+          <img src="styles/icons/cutout.svg" class ="img-front">
+        </article>
+
+
+
+        <!-- "Work" divider-->
+        <div class = "work-box">
+          <h1 class = "header">Hey, what's good? I'm <span class="yellow">Fred</span>, a UX/UI Designer based in San Francisco. Design is how I make sense of the world.</h1>
+          <img src="styles/icons/thinker.svg" class = "work-icon">
+          <h2 class = "work-text">Work</h2>
+        </div>
+
+        <!-- Project 1: Skylake-->
+        <article class = "container pink">
+            <div class = "proj-text">
+              <h2 class= "proj-title">Skylake</h2>
+              <h3 class = "proj-desc">Cloud. Clearer space, clearer vision.</h3>
+              <img src="images/skylake-black.png" class = "proj-img">
+              <table align="center" class = "table-role-landing">
+                <tr>
+                  <th><img src="styles/icons/design-white.svg" class = "icon"></th>
+                  <th class = "border"><img src="styles/icons/research-white.svg" class = "icon"></th>
+                  <th><img src="styles/icons/research-white.svg" class = "icon"></th>
+                </tr>
+                <tr>
+                  <td class = "landing-cell">Designer</td>
+                  <td class = "border landing-cell">Researcher</td>
+                  <td class = "landing-cell">Brand Creator</td>
+                </tr>
+              </table>
+              <form>
+                <input class = "button-landing" type="button" value="See Case Study" onclick="window.location.href='project.html'" />
+              </form>
+            </div>
+        </article>
+
+        <!-- Project 2 TBD-->
+        <article class = "container gold">
+            <div class = "proj-text">
+              <h2 class= "proj-title black-type">Project 2</h2>
+              <h3 class = "proj-desc black-type">Quick and insightful description</h3>
+              <img src="images/skylake-black.png" class = "proj-img">
+              <table align="center" class = "table-role-landing">
+                <tr>
+                  <th class = "black-type"><img src="styles/icons/design-white.svg" class = "icon"></th>
+                  <th class = "border black-type"><img src="styles/icons/research-white.svg" class = "icon"></th>
+                  <th><img src="styles/icons/research-white.svg" class = "icon"></th>
+                </tr>
+                <tr>
+                  <td class = "landing-cell black-type">Designer</td>
+                  <td class = "border landing-cell black-type">Researcher</td>
+                  <td class = "landing-cell black-type">Brand Creator</td>
+                </tr>
+              </table>
+              <form>
+                <input class = "button-landing black-type" type="button" value="See Case Study" onclick="window.location.href='project.html'" />
+              </form>
+            </div>
+        </article>
+
+        <!-- Project 3: TBD-->
+        <article class = "container blue">
+            <div class = "proj-text">
+              <h2 class= "proj-title">Project 3</h2>
+              <h3 class = "proj-desc">Quick and insightful description</h3>
+              <img src="images/skylake-black.png" class = "proj-img">
+              <table align="center" class = "table-role-landing">
+                <tr>
+                  <th><img src="styles/icons/design-white.svg" class = "icon"></th>
+                  <th class = "border"><img src="styles/icons/research-white.svg" class = "icon"></th>
+                  <th><img src="styles/icons/research-white.svg" class = "icon"></th>
+                </tr>
+                <tr>
+                  <td class = "landing-cell">Designer</td>
+                  <td class = "border landing-cell">Researcher</td>
+                  <td class = "landing-cell">Brand Creator</td>
+                </tr>
+              </table>
+              <form>
+                <input class = "button-landing" type="button" value="See Case Study" onclick="window.location.href='project.html'" />
+              </form>
+            </div>
+        </article>
+
+
+
+        <footer class = "footer">
+          <span>Questions, comments, coffee?</span>
+          <br>
+          <span>Let's <span class = "yellow">connect.</span></span>
+          <br>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-envelope"></a>
+          <a href="#" class="fa fa-dribbble"></a>
+          <a href="#" class="fa fa-github"></a>
+        </footer>
+
+      </section>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/fadein.js"></script>
+  </body>
+
+
+
+
+
+
+
+
+</html>
