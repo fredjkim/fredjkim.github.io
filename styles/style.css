@@ -52,8 +52,6 @@
 body {
   background-color: #030303;
   margin: 0;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 
 .button-landing:focus {outline:0;}
@@ -218,9 +216,8 @@ th.black-type {
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   perspective-origin-x: 100%;
-
 }
 .parallax__layer {
   position: absolute;
