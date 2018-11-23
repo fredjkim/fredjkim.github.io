@@ -30,7 +30,17 @@
   url("fonts/RNS_Sanz-WOFF/RNSSanz-Bold.woff") format("woff");
 }
 
+@keyframes fade-in {
+    from {opacity: 0; transform: scale(.9,.9)}
+    to {opacity: 1;}
+}
+.fade-in-element {
+  animation: fade-in 1.3s;
+}
 
+.hidden {
+  opacity: 0;
+}
 
 
 
@@ -124,29 +134,27 @@ th.black-type {
   overflow: hidden;
   margin: auto;
   text-align: left;
-  height: 20%;
+  height: 40vw;
 }
 
 .img-back {
   position: absolute;
   object-fit: cover;
-  width: 40%;
-  height: 20%;
-  top: 7%;
+  width: 40vw;
+  height: 37vw;
   left: 50%;
-  margin-top: -10%;
-  margin-left: -20%;
+  margin-left: -20vw;
+
 }
 
 .img-front {
   position: absolute;
   object-fit: cover;
-  width: 90%;
-  height: 23%;
-  top: 4%;
+  width: 66vw;
+  height: 40vw;
   left: 50%;
-  margin-top: -10%;
-  margin-left: -45%;
+  margin-left: -33vw;
+  margin-top:;
   opacity: 0.8;
 }
 
@@ -189,39 +197,21 @@ th.black-type {
 
 .proj-content {
   /*background-image: url("../images/backimage.png");*/
-  background-size:cover;
-  background-attachment: fixed;
-  padding-top: 10px;
+  height: 20%;
 }
 
 .backimage {
-  margin-top: -50%;
-  margin-left: -200%;
+  position: fixed;
+  z-index: -1;
+  height: 50%;
+  left: 0%;
 }
 
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  perspective-origin-x: 100%;
+.skylake {
+  background-image: url("../images/pinkwall.png");
+  background-size: cover;
+  background-position: center;
 }
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform-origin-x: 100%;
-}
-.parallax__layer--base {
-  transform: translateZ(0);
-  height: 100vh;
-}
-.parallax__layer--back {
-  transform: translateZ(-7px) scale(2);
-}
-
 
 
 .case-study-text {
@@ -234,7 +224,7 @@ th.black-type {
 .header {
   position: relative;
   text-align: left;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1.4em;
   margin: 10% 0;
 
@@ -258,21 +248,23 @@ th.black-type {
 
 #thinker {
   height: 10%;
-  padding: 20%;
+  padding: 30% 0 10% 0;
 }
 
 .work-text {
   color: #FFC823;
   font-size: 2em;
-  margin: 0% 0 10% 0;
+  margin: 0;
 }
 
 .container {
   position: relative;
   display: flex;
+  min-height: 500px;
   height: 80%;
   margin: 0 auto 15% auto;
 }
+
 
 .container.pink {
   background-color: #F67FB9;
@@ -283,6 +275,7 @@ th.black-type {
 .container.blue {
   background-color: #55A7EF;
 }
+*/
 
 
 .proj-container {
