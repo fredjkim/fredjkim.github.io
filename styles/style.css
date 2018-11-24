@@ -214,6 +214,18 @@ th.black-type {
   background-position: center;
 }
 
+.wave {
+  background-image: url("../images/wave.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.bubble {
+  background-image: url("../images/bubble.gif");
+  background-size: cover;
+  background-position: center;
+}
+
 
 .case-study-text {
   font-family: "RNSSanz-Medium";
