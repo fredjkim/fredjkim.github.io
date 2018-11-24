@@ -225,7 +225,7 @@ th.black-type {
 .header {
   position: relative;
   text-align: left;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.4em;
   margin: 10% 0 10% 0;
 
@@ -315,7 +315,7 @@ th.black-type {
 
 .proj-desc {
   font-family: "RNSSanz-Medium";
-  font-size: 1em;
+  font-size: 1.2em;
   margin: 2% 0 5% 0;
 }
 
@@ -353,6 +353,7 @@ th.black-type {
 .role-col {
   text-align: center;
   font-size: 1em;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -555,7 +556,7 @@ p {
 
 footer {
   height: 20%;;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: auto;
   text-align: center;
   line-height: 1.5em;
