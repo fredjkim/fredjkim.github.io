@@ -55,24 +55,16 @@ body {
 
 .button-landing {
   font-family: "RNSSanz-ExtraBold";
-  font-size: 1.5em;
-  color: #fffff0;
-  cursor: pointer;
-  height: 10%;
-  width: 100%;
-  background: transparent;
-  padding: 3% 5%;
-  margin: 5% 0;
-  border-radius: 0.2em;
-  border: 0.12em solid #fffff0;
-  box-shadow: 0 .4em .1em rgba(0,0,0,0.4);
-}
-
-.button-landing.black-type {
+  font-size: 1.3em;
   color: #030303;
-  border: 0.12em solid #030303;
-
-
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  background: #FFC823;
+  padding: 3%;
+  border-radius: 0.2em;
+  box-shadow: 0 .4em .1em rgba(0,0,0,0.4);
+  margin-bottom: 1em;
 }
 
 .button-landing:hover {
@@ -135,28 +127,28 @@ th.black-type {
   overflow: hidden;
   margin: auto;
   text-align: left;
-  height: 40vw;
+  height: 50vw;
 }
 
 .img-back {
   position: absolute;
   object-fit: cover;
-  width: 40vw;
-  height: 37vw;
+  width: 50vw;
+  height: 47vw;
   left: 50%;
-  margin-left: -20vw;
+  margin-left: -25vw;
 
 }
 
 .img-front {
   position: absolute;
   object-fit: cover;
-  width: 66vw;
-  height: 40vw;
+  width: 100vw;
+  height: 50vw;
   left: 50%;
-  margin-left: -33vw;
+  margin-left: -50vw;
   margin-top:;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .header-container {
@@ -186,6 +178,63 @@ th.black-type {
   margin-bottom: -5%;
 }
 
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 80vh;
+  border-radius: .5em;
+  margin-bottom: 7vh;
+}
+
+.proj-img {
+  height: 80vh;
+  margin-top: -5vh;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.name-desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1em;
+  height: 20vh;
+}
+
+
+
+.card-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #404040;
+  padding: 0 1em;
+}
+
+
+.role-study {
+  font-family: "RNSSanz-Medium";
+  margin: 1em 0;
+}
+
+.role {
+  display: inline-block;
+  height: 10vh;
+  color: #FFC823;
+  border: 1pt solid #FFC823;
+  height: 1em;
+  padding: 0 1em 0.4em;
+  border-radius: 2em;
+  margin-right: 0.25em;
+}
+
+
+
 #skylake-logo {
   width: 100px;
 }
@@ -204,14 +253,13 @@ th.black-type {
 .backimage {
   position: fixed;
   z-index: -1;
-  width: 250%;
+  width: 100%;
+  margin-top: -20vh;
   left: 0%;
 }
 
 .skylake {
-  background-image: url("../images/pinkwall.png");
-  background-size: cover;
-  background-position: center;
+  background: #F67FB9;
 }
 
 .wave {
@@ -237,7 +285,7 @@ th.black-type {
 .header {
   position: relative;
   text-align: left;
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 1.4em;
   margin: 10% 0 10% 0;
 
@@ -257,6 +305,10 @@ th.black-type {
   height: ;
 }
 
+.work-icon {
+  height: 4em;
+}
+
 .emoji {
   font-size: .7em;
 }
@@ -268,7 +320,7 @@ th.black-type {
 
 .work-text {
   color: #FFC823;
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 0;
 }
 
@@ -278,6 +330,8 @@ th.black-type {
   min-height: 500px;
   height: 80%;
   margin: 0 auto 15% auto;
+  border-radius: 10px;
+
 }
 
 
@@ -290,19 +344,15 @@ th.black-type {
 .container.blue {
   background-color: #55A7EF;
 }
-*/
-
 
 .proj-container {
   position: relative;
   margin: auto;
-  padding: 0;
-  width: 200vw;
+  padding: 0 1em;
 }
 
 .proj-text {
   padding: 1em;
-
   position: absolute;
   text-align: center;
   left: 0;
@@ -315,7 +365,6 @@ th.black-type {
 
 .proj-img {
   position: relative;
-  height: 50%;
   margin-bottom: -5%;
 }
 
@@ -323,12 +372,16 @@ th.black-type {
 .proj-title {
   font-size: 2em;
   margin: 0;
+  color: #030303;
 }
 
 .proj-desc {
-  font-family: "RNSSanz-Medium";
+  font-family: "Avenir";
   font-size: 1.2em;
+  line-height: 1.3em;
   margin: 2% 0 5% 0;
+  color: #030303;
+
 }
 
 
@@ -353,13 +406,13 @@ th.black-type {
 }
 
 .center-col {
-  border-right: 1px solid #fffff0;
-  border-left: 1px solid #fffff0;
+  border-right: 1px solid #828261;
+  border-left: 1px solid #828261;
 
 }
 
 .icon {
-  height: 1.5em;
+  height: 1.4em;
 }
 
 .role-col {
