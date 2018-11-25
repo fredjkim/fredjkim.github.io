@@ -104,14 +104,6 @@ a, h1, h2, h3, h4, footer{
   color: #fffff0;
 }
 
-a.black-type,
-h1.black-type,
-h2.black-type,
-h3.black-type,
-td.black-type,
-th.black-type {
-  color: #030303;
-}
 
 .navbar {
   position: fixed;
@@ -289,8 +281,8 @@ th.black-type {
 .header {
   position: relative;
   text-align: left;
-  font-size: 1.4em;
-  line-height: 1.4em;
+  font-size: 1.58em;
+  line-height: 1.5;
   margin: 10% 0 10% 0;
 
 }

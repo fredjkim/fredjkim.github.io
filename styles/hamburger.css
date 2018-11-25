@@ -116,8 +116,8 @@ a {
 .button-toggle {
   position: absolute;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin: 1em;
   background-color: transparent;
   border: none;
@@ -172,7 +172,7 @@ a {
   clear: both;
   color: transparent;
   font-size: 1.2em;
-  letter-spacing: -8px;
+  letter-spacing: -8.8px;
   height: 8px;
   line-height: 7px;
   text-transform: uppercase;
@@ -229,7 +229,7 @@ a {
 }
 
 .nav-item:nth-child(2) {
-  letter-spacing: -8px;
+  letter-spacing: -9px;
 }
 
 .nav-item:nth-child(n + 4) {
