@@ -171,9 +171,9 @@ a {
   float: left;
   clear: both;
   color: transparent;
-  font-size: 14px;
-  letter-spacing: -6.2px;
-  height: 7px;
+  font-size: 1.2em;
+  letter-spacing: -8px;
+  height: 8px;
   line-height: 7px;
   text-transform: uppercase;
   white-space: nowrap;
@@ -225,11 +225,11 @@ a {
 }
 
 .nav-item:nth-child(1) {
-  letter-spacing: -8px;
+  letter-spacing: -7px;
 }
 
 .nav-item:nth-child(2) {
-  letter-spacing: -7px;
+  letter-spacing: -8px;
 }
 
 .nav-item:nth-child(n + 4) {

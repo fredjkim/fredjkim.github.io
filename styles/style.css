@@ -54,9 +54,11 @@ body {
 .button-landing:focus {outline:0;}
 
 .button-landing {
-  font-family: "RNSSanz-ExtraBold";
-  font-size: 1.3em;
-  color: #030303;
+  font-family: sofia-pro-soft, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.4em;
+  color: #36383d;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -96,7 +98,9 @@ body {
 }
 
 a, h1, h2, h3, h4, footer{
-  font-family: "RNSSanz-ExtraBold";
+  font-family: sofia-pro-soft, sans-serif;
+  font-weight: 600;
+  font-style: normal;
   color: #fffff0;
 }
 
@@ -185,12 +189,12 @@ th.black-type {
   align-items: center;
   overflow: hidden;
   height: 80vh;
-  border-radius: .5em;
+  border-radius: 1em;
   margin-bottom: 7vh;
 }
 
 .proj-img {
-  height: 80vh;
+  height: 85vh;
   margin-top: -5vh;
   flex-shrink: 0;
   min-width: 100%;
@@ -212,7 +216,7 @@ th.black-type {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(45,45,45,0.9);
+  background: #36383d;
   padding: 0 1em;
 }
 
@@ -285,7 +289,7 @@ th.black-type {
 .header {
   position: relative;
   text-align: left;
-  font-size: 1.5em;
+  font-size: 1.4em;
   line-height: 1.4em;
   margin: 10% 0 10% 0;
 
@@ -315,7 +319,7 @@ th.black-type {
 
 #thinker {
   height: 10%;
-  padding: 30% 0 10% 0;
+  padding: 10% 0;
 }
 
 .work-text {
@@ -362,10 +366,6 @@ th.black-type {
 }
 
 
-.proj-img {
-  position: relative;
-  margin-top: -15%;
-}
 
 .proj-title {
   font-size: 2em;
@@ -404,13 +404,13 @@ th.black-type {
 }
 
 .center-col {
-  border-right: 1px solid #828261;
-  border-left: 1px solid #828261;
+  border-right: 1px solid #fffff0;
+  border-left: 1px solid #fffff0;
 
 }
 
 .icon {
-  height: 1.4em;
+  height: 1.3em;
 }
 
 .role-col {
