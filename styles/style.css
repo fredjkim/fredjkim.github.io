@@ -212,7 +212,7 @@ th.black-type {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #404040;
+  background: rgba(45,45,45,0.9);
   padding: 0 1em;
 }
 
@@ -348,7 +348,6 @@ th.black-type {
 .proj-container {
   position: relative;
   margin: auto;
-  padding: 0 1em;
 }
 
 .proj-text {
@@ -365,14 +364,13 @@ th.black-type {
 
 .proj-img {
   position: relative;
-  margin-bottom: -5%;
+  margin-top: -15%;
 }
-
 
 .proj-title {
   font-size: 2em;
   margin: 0;
-  color: #030303;
+  color: #fffff0;
 }
 
 .proj-desc {
@@ -380,7 +378,7 @@ th.black-type {
   font-size: 1.2em;
   line-height: 1.3em;
   margin: 2% 0 5% 0;
-  color: #030303;
+  color: #fffff0;
 
 }
 
