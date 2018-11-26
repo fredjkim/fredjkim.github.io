@@ -51,14 +51,15 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-.button-landing:focus {outline:0;}
 
-.button-landing {
+.button:focus {outline:0;}
+
+.button {
   font-family: sofia-pro-soft, sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 1.4em;
-  color: #36383d;
+  color: #565656;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -67,35 +68,15 @@ body {
   border-radius: 0.2em;
   box-shadow: 0 .4em .1em rgba(0,0,0,0.4);
   margin-bottom: 1em;
+  -webkit-appearance: none;
 }
 
-.button-landing:hover {
+.button:hover {
     background: #ED529E;
     box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
 
 }
 
-
-.button-case {
-  font-family: "RNSSanz-ExtraBold";
-  margin: 5% 0;
-  font-size: 3em;
-  color: #FFC823;
-  cursor: pointer;
-  height: 120px;
-  width: 100%;
-  background: transparent;
-  padding: 0.2em 1em;
-  border-radius: 0.2em;
-  border: 0.12em solid #FFC823;
-  box-shadow: 0px 5px 1px rgba(0,0,0,0.4);
-}
-
-.button-case:hover {
-    background: #ED529E;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
-
-}
 
 a, h1, h2, h3, h4, footer{
   font-family: sofia-pro-soft, sans-serif;
@@ -208,7 +189,7 @@ a, h1, h2, h3, h4, footer{
   bottom: 0;
   left: 0;
   right: 0;
-  background: #36383d;
+  background: #565656;
   padding: 0 1em;
 }
 
@@ -441,7 +422,7 @@ table.case-study-table {
 th.case-table {
   text-align: center;
   font-family: "RNSSanz-ExtraBold";
-  font-size: 2em;
+  font-size: 1.5em;
   height: 70px;
   color: #fffff0;
 }
@@ -465,6 +446,7 @@ th.case-table {
   margin: 5% 0 10% 0;
   height: 725px;
   width: 100%;
+  overflow: hidden;
 }
 
 .carousel img {
@@ -561,17 +543,17 @@ img.is-selected {
 /* Case Study */
 .study-content {
   text-align: center;
-  padding: 0 36px;
+  padding: 0 1em;
 }
 
 .main-sections {
   color: #FFC823;
-  font-size: 4em;
+  font-size: 2em;
   margin: 5% auto 0 auto;
 }
 
 .main-points {
-  font-size: 2em;
+  font-size: 1.5em;
   width: 100%;
   margin: 5% auto;
   line-height: 1.4;
@@ -594,7 +576,8 @@ a {
 p {
   color: #fffff0;
   font-family: "Avenir";
-  font-size: 1em;
+  font-weight: 500;
+  font-size: 1.2em;
   width: 100%;
   margin: auto;
   text-align: left;
@@ -629,31 +612,31 @@ a.fa {
 .chart {
   display: grid;
   grid-template-rows: repeat(100, 1fr);
-  grid-column-gap: 20px;
+  grid-column-gap: 2%;
   width: 100%;
-  height: 1000px;
-  margin-top: -550px;
+  height: 70vh;
+  margin-top: -37vh;
 }
 
 .chart.competition {
-  height: 300px;
-  margin-top: 100px;
+  height: 20vh;
+  margin-top: 5vh;
 }
 
 .bar {
   grid-row-end: 102;
   position: relative;
   background: #ffc600;
-  width: 212px;
+  width: 21.5vw;
 }
 
 .bar.google {
-  width: 440px;
+  width: 45vw;
   background: #20A464;
 }
 
 .bar.dropbox {
-  width: 440px;
+  width: 45vw;
   background: #0062FF;
 }
 
@@ -663,9 +646,9 @@ a.fa {
 
 .bar-percent {
   position: relative;
-  top: -80px;
+  top: -40px;
   text-align: center;
-  font-size: 3em;
+  font-size: 1.5em;
 }
 
 .bar-name {
@@ -677,15 +660,14 @@ a.fa {
 }
 
 .bar-problem {
-  font-size: 2.3em;
-  margin-top: -40px;
+  font-size: 1em;
+  margin-top: -3vh;
   color: #030303;
 }
 
 /* Other Styles*/
 
 .chart-container {
-  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -696,10 +678,11 @@ a.fa {
 }
 
 .chart-container.no-emoji {
-  margin-bottom: -90px;
+  margin-bottom: ;
 }
 
 .chart-title {
+  font-size: 1.5em;
   margin: 100px 0 0 0;
 }
 
