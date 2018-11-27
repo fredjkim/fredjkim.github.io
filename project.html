@@ -8,12 +8,27 @@
     <link rel="stylesheet" href="https://use.typekit.net/sja5ifc.css">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/flickity.css">
     <link href="styles/hamburger.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <div class="hamburger-container">
+    <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+      <input id="toggle" type="checkbox">
+      <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
 
-
+      <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+      <label class="toggle-container" for="toggle">
+          <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+          <span class="button button-toggle"></span>
+      </label>
+      <!-- The nav menu -->
+      <nav class="nav">
+          <a class="nav-item" href="">About</a>
+          <a class="nav-item" href="">Resume</a>
+          <a class="nav-item" href="">Contact</a>
+      </nav>
     <!-- hero image -->
     <section class = "header-container">
       <article class = "header-content">
@@ -30,9 +45,9 @@
       <!-- Summary -->
       <article class = "case-sections">
         <h1 class = "main-sections">Summary</h1>
-        <h3 class = "main-points">Skylake is a cloud service redesigned to replace bloat with a simple interface and easy workflow.</h3>
+        <h3 class = "main-points">Skylake is a cloud service that replaces bloat with easy workflow through a simple interface.</h3>
         <form>
-          <input class = "button" type="button" value="See InVision Prototype" onclick="https://invis.io/SMOBONT8ZKD" style="color:#030303"/>
+          <input class = "click-button" type="button" value="See InVision Prototype" onclick="https://invis.io/SMOBONT8ZKD" style="color:#030303"/>
         </form>
         <table align = "center" class = "case-study-table">
           <tr>
@@ -99,7 +114,7 @@
       <article class = "case-sections">
         <h1 class = "main-sections">The Solution</h1>
         <div class = "solution-img-txt">
-          <h3>Built upon <span style="color:#F67FB9;">four</span> pillars that address the user's concerns directly</h3>
+          <h3 class = "main-points">Built upon <span style="color:#F67FB9;">four</span> pillars that address the user's concerns directly</h3>
           <!--<img src="images/skylake-black.png" class = "proj-img">-->
         </div>
 
@@ -254,7 +269,7 @@
         </table>
         <p>Priority dictates hierarchy, architecture, flow, and visual design. A minimum viable product is the initial goal so users first get what they need, then add nice-to-haves in succession. </p>
         <form>
-          <input class = "button" type="button" value="All User Stories" onclick="#" style="color:#030303"/>
+          <input class = "click-button" type="button" value="All User Stories" onclick="#" style="color:#030303"/>
         </form>
       </article>
 
@@ -272,7 +287,7 @@
         </div>
         <p>Bare bones flow diagrams quickly reveal key decision points and unnecessary steps. Simplicity, accessibility, and efficiency are the goals. This means reducing steps, cross-referencing nodes, and grouping by common denominators.<p>
         <form>
-          <input class = "button" type="button" value="All User Flows" onclick="#" />
+          <input class = "click-button" type="button" value="All User Flows" onclick="#" style="color:#030303" />
         </form>
       </article>
 
@@ -293,7 +308,7 @@
           <button>Sign Up</button>
         </div>
         <form>
-          <input class = "button" type="button" value="Wireframe Prototype" onclick="#" style="color:#030303"/>
+          <input class = "click-button" type="button" value="Wireframe Prototype" onclick="#" style="color:#030303"/>
         </form>
       </article>
 
@@ -381,6 +396,7 @@
 
     </section>
 
+  </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/problemchart.js"></script>
