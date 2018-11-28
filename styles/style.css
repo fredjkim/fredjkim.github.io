@@ -71,6 +71,11 @@ body {
   -webkit-appearance: none;
 }
 
+.landing {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
 .click-button:hover {
     background: #ED529E;
     box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
@@ -411,7 +416,6 @@ th {
 
 table.case-study-table {
   width: 100%;
-  margin: 5% 0;
   font-size: 1em;
 }
 
@@ -419,9 +423,9 @@ th.case-table {
   text-align: center;
   font-family: "RNSSanz-ExtraBold";
   font-size: 1.5em;
-  height: 70px;
   color: #fffff0;
 }
+
 
 .border {
   border-left: 1px solid #fffff0;
@@ -439,14 +443,13 @@ th.case-table {
 
 .carousel {
   background: #030303;
-  margin: 5% 0 20% 0;
-  width: 100%;
+  margin: 3% -1em;
 }
 
 .carousel img {
   display: block;
-  width: 90%;
-  margin-left: -5%;
+  width: 95%;
+  margin-left: -7%;
 
   /* dim unselected */
   opacity: 0.5;
@@ -469,29 +472,26 @@ img.is-selected {
 }
 
 .carousel-title {
-  font-family: "RNSSanz-ExtraBold";
-  color: #FFC823;
+font-family: sofia-pro-soft, sans-serif;  color: #FFC823;
   font-size: 1.5em;
   text-align: center;
   margin: 10% 0 0 0;
 }
 
 .caption {
-  font-family: "RNSSanz-Bold";
+  font-family: sofia-pro-soft, sans-serif;
   font-size: 1em;
   text-align: center;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 90vw;
+  margin-bottom: 10%;
 }
 
 /* buttons, no circle */
-.flickity-prev-next-button {
-  display: none;
-  width: 50px;
-  height: 300px;
-  background: transparent;
-  opacity: 1;
-}
+
 .flickity-prev-next-button:hover {
-  background: transparent;
   opacity: 1;
 }
 /* arrow color */
@@ -512,18 +512,19 @@ img.is-selected {
 
 /* position dots in gallery */
 .flickity-page-dots {
-  bottom: -30px;
+  bottom: 3%;
 }
 /* white circles */
 .flickity-page-dots .dot {
   opacity: .5;
-  background: transparent;
-  border: 3px solid #fffff0;
+  background: #030303;
+  border: 1px solid #030303;
+
 }
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
   background: #FFC823;
-  border: 3px solid #FFC823;
+  border: 1px solid #FFC823;
 }
 
 
@@ -547,14 +548,25 @@ img.is-selected {
 .main-points {
   font-size: 1.3em;
   width: 100%;
-  margin: 5% auto;
+  margin: 0;
   line-height: 1.4;
 }
 
 
+.single-img {
+  width: 100%;
+  margin: 5% 0;
+}
 
+.img-row {
+  display: inline-block;
+  white-space: nowrap;
+  margin: 5% 0;
+}
 
-
+.goldarrow {
+  transform: rotate(90deg);
+}
 
 a {
   text-decoration: none;
@@ -569,7 +581,7 @@ p {
   color: #fffff0;
   font-family: "Avenir";
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1.1em;
   width: 100%;
   margin: auto;
   text-align: left;
@@ -577,10 +589,10 @@ p {
 }
 
 .process-steps {
-  font-size: 2em;
+  font-size: 1.75em;
   width: 100%;
-  margin: 5% auto;
-  text-align: center;
+  margin: 5% 0 2% 0;
+  text-align: left;
   padding-bottom: 5px;
 }
 
@@ -606,12 +618,13 @@ a.fa {
   grid-template-rows: repeat(100, 1fr);
   grid-column-gap: 2%;
   width: 100%;
-  height: 70vh;
-  margin-top: -37vh;
+  height: 50vh;
+  margin-top: -25vh;
+  margin-bottom: 5%;
 }
 
 .chart.competition {
-  height: 20vh;
+  height: 13vh;
   margin-top: 5vh;
 }
 
@@ -620,6 +633,7 @@ a.fa {
   position: relative;
   background: #ffc600;
   width: 21.5vw;
+  border-radius: .3em .3em 0 0;
 }
 
 .bar.google {
@@ -640,21 +654,52 @@ a.fa {
   position: relative;
   top: -40px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .bar-name {
   position: relative;
   bottom: -99%;
   text-align: center;
-  font-size: 3.5em;
-  margin-top: -80px;
+  font-size: 1.5em;
+  margin-top: -50%;
 }
 
 .bar-problem {
-  font-size: 1em;
-  margin-top: -3vh;
+  font-size: 0.95em;
+  margin-top: -2.5vh;
   color: #030303;
+}
+
+table.mobile th {
+  font-size: 1.3em;
+  font-family: sofia-pro-soft, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+table.mobile td {
+  font-size: 1.1em;
+  padding-bottom: 5%;
+}
+
+.high {
+  color: #E44D4D;
+}
+
+.med {
+  color: #FFC823;
+}
+
+.low {
+  color: #0BDAAC;
+}
+
+table.desktop {
+  display: none; /*change this on media query*/
+}
+
+table.mobile {
 }
 
 /* Other Styles*/
@@ -664,8 +709,9 @@ a.fa {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  font-family: "RNSSanz-ExtraBold";
-  font-weight: bold;
+  font-family: sofia-pro-soft, sans-serif;
+  font-weight: 600;
+  font-style: normal;
   color: #fffff0;
 }
 
@@ -675,7 +721,7 @@ a.fa {
 
 .chart-title {
   font-size: 1.5em;
-  margin: 100px 0 0 0;
+  margin: 5% 0 0 0;
 }
 
 
@@ -715,6 +761,11 @@ a.fa {
   margin: 0;
   margin-bottom: 5%;
   color: #030303;
+}
+
+.feature-text {
+  color: #030303;
+  font-size: 1em;
 }
 
 

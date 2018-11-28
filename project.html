@@ -25,6 +25,7 @@
       </label>
       <!-- The nav menu -->
       <nav class="nav">
+          <a class="nav-item" href="index.html">Home</a>
           <a class="nav-item" href="">About</a>
           <a class="nav-item" href="">Resume</a>
           <a class="nav-item" href="">Contact</a>
@@ -47,9 +48,9 @@
         <h1 class = "main-sections">Summary</h1>
         <h3 class = "main-points">Skylake is a cloud service that replaces bloat with easy workflow through a simple interface.</h3>
         <form>
-          <input class = "click-button" type="button" value="See InVision Prototype" onclick="https://invis.io/SMOBONT8ZKD" style="color:#030303"/>
+          <input class = "click-button landing" type="button" value="See InVision Prototype" onclick="https://invis.io/SMOBONT8ZKD" style="color:#030303"/>
         </form>
-        <table align = "center" class = "case-study-table">
+        <table align = "center" class = "case-study-table desktop">
           <tr>
             <th class = "case-table">Roles</th>
             <th class = "case-table">Deliverables</th>
@@ -74,6 +75,28 @@
             <td>Sketch</td>
           </tr>
         </table>
+
+        <table class="mobile case-study-table">
+          <tr>
+            <th class="case-table">Roles</th>
+          </tr>
+          <tr>
+            <td>Research and Design<br>Competitive Analysis<br>Content Strategist<br>Brand Creator</td>
+          </tr>
+          <tr>
+            <th class="case-table">Deliverables</th>
+          </tr>
+          <tr>
+            <td>Lo-Fi/Hi-Fi Mockups<br>Clickable Prototype<br>Imagery & Icons<br>Logo & Type</td>
+          </tr>
+          <tr>
+            <th class="case-table">Tools</th>
+          </tr>
+          <tr>
+            <td>Pen & Paper<br>Illustrator<br>InVision<br>Sketch</td>
+          </tr>
+        </table>
+
       </article>
 
       <!-- Problem -->
@@ -81,27 +104,27 @@
         <h1 class = "main-sections">The Problem</h1>
         <h3 class = "main-points">Users have four main frustrations with current cloud apps</h3>
 
-        <div class="chart-container">
+        <div class="chart-container" style="height:32%">
           <div class="chart">
             <div class="bar">
                 <div class="bar-percent">32%</div>
                 <div class="bar-problem">Tedious Navigation</div>
-                <div class="bar-name"></div>
+                <div class="bar-name">😓</div>
             </div>
             <div class="bar">
                 <div class="bar-percent">25%</div>
                 <div class="bar-problem">Ambiguous Features</div>
-                <div class="bar-name"></div>
+                <div class="bar-name">😕</div>
             </div>
             <div class="bar">
                 <div class="bar-percent">25%</div>
-                <div class="bar-problem">Feature Bloat</div>
-                <div class="bar-name"></div>
+                <div class="bar-problem">Too Many Features</div>
+                <div class="bar-name">😧</div>
             </div>
             <div class="bar">
                 <div class="bar-percent">19%</div>
                 <div class="bar-problem">Cluttered Workspace</div>
-                <div class="bar-name"></div>
+                <div class="bar-name">😔</div>
             </div>
           </div> <!-- chart -->
         </div><!-- container -->
@@ -123,25 +146,25 @@
           <div class="box">
             <span class="feature-box">
               <h3 class="feature">Simple Layout</h3>
-              <p style="color:#030303;">3 containers, color coded icons, unmistakable buttons, large profile photos</p>
+              <p class="feature-text">3 containers, color coded icons, unmistakable buttons, large profile photos</p>
             </span>
           </div>
           <div class="box">
             <span class="feature-box">
               <h3 class="feature">Easy Navigation</h3>
-              <p style="color:#030303;">Familiar interface with features accessible from any page</p>
+              <p class="feature-text">Familiar interface with features accessible from any page</p>
             </span>
           </div>
           <div class="box">
             <span class="feature-box">
               <h3 class="feature">Efficient Architecture</h3>
-              <p style="color:#030303;">Group like-objects, bring most essential features to surface</p>
+              <p class="feature-text">Group like-objects, bring most essential features to surface</p>
             </span>
           </div>
           <div class="box">
             <span class="feature-box">
               <h3 class="feature">Social Enabled</h3>
-              <p style="color:#030303;">Emphasize share and collaborative features to engage users</p>
+              <p class="feature-text">Emphasize share and collaborative features to engage users</p>
             </span>
           </div>
         </div>
@@ -193,7 +216,7 @@
                 </div>
                 <div class="bar green">
                     <div class="bar-percent">25%</div>
-                    <div class="bar-problem">Live Editing</div>
+                    <div class="bar-problem">Live<br>Editing</div>
                 </div>
                 <div class="bar green">
                     <div class="bar-percent">19%</div>
@@ -225,14 +248,15 @@
         <p>I conducted a user survey which revealed two main competitors - Google Drive (94% of users) and Dropbox (41% of users). They’re doing something right, but a closer look reveals some poor UI decisions that frustrate users.</p>
 
         <!-- Flickity HTML init -->
-        <p class="carousel-title">&nbsp;</p>
-        <p class="caption">&nbsp;</p>
-
-        <div class="carousel js-flickity">
-          <img src="images/ui-problems/button-prox.png" title="Awkward Button Proximity" alt="Users have to constantly look across the screen to find file-related actions." />
-          <img src="images/ui-problems/feature-bloat.png" title="Feature Bloat" alt="What are all these features? What do they do? Why should I pay for more?" />
-          <img src="images/ui-problems/nested-arch.png" title="Unnecessary Nesting" alt="Users have to click “settings” after clicking the settings icon to get to settings." />
-          <img src="images/ui-problems/unclear-feat.png" title="Ambiguous Features" alt="2x2 vs 3x3 grid icon - What’s the difference? What does the eye icon reveal? What is “Paper?”" />
+        <div class="carousel-container">
+          <p class="carousel-title">&nbsp;</p>
+          <div class="carousel js-flickity">
+            <img src="images/ui-problems/button-prox.png" title="Awkward Button Proximity" alt="Users have to constantly look across the screen to find file-related actions." />
+            <img src="images/ui-problems/feature-bloat.png" title="Feature Bloat" alt="What are all these features? What do they do? Is more really better?" />
+            <img src="images/ui-problems/nested-arch.png" title="Unnecessary Nesting" alt="Users have to click “settings” after clicking the settings icon to get to settings." />
+            <img src="images/ui-problems/unclear-feat.png" title="Ambiguous Features" alt="2x2 vs 3x3 grid icon - What’s the difference? What does the eye icon do? What is “Paper?”" />
+          </div>
+          <p class="caption yellow">&nbsp;</p>
         </div>
 
         <p>The competition definitely lacks no features but you have to constantly work to find where they are and what they mean. Is this the experience we want for our users? Or more importantly, <span style="color:#FFC823; font-weight: 600;"><em>who</em></span> are our users?</p>
@@ -242,12 +266,19 @@
       <article class = "case-sections">
         <h3 class = "process-steps"><span class = "yellow">3.</span> User Personas</h3>
         <p>Having understood the market, I visualized the potential consumers with user personas to give context to real world scenarios.</p>
-        <img src="#">
-        <div class="btn-group">
-          <button>Meet Lauren</button>
-          <button>Meet Jacob</button>
-          <button>Meet Mark</button>
+
+        <div class="carousel-container">
+          <p class="carousel-title">&nbsp;</p>
+          <div class="carousel js-flickity">
+            <img src="images/personas/lauren.png" title="Meet Lauren" alt="Lauren is a designer who needs a simple and quick interface to bounce ideas to her team and manager. " />
+            <img src="images/personas/jacob.png" title="Meet Jacob" alt="Jacob is a busy engineering student who needs to store and organize assignments for access from any device." />
+            <img src="images/personas/mark.png" title="Meet Mark" alt="Mark is a technical product manager who uses cloud to manage versions across multiple project materials." />
+          </div>
+          <p class="caption yellow">&nbsp;</p>
         </div>
+
+
+
         <p>Varying ages, job roles, motivations, goals, and frustrations paints a broader picture of our target audience, which means more points for adjustment to tailor our product.</p>
       </article>
 
@@ -255,7 +286,30 @@
       <article class = "case-sections">
         <h3 class = "process-steps"><span class = "yellow">4.</span> User Stories</h3>
         <p>With our personas in mind, I created a list of common use cases in the form of user stories. Every story tells of a mini journey but not all stories are born equal. Thus, I categorize task by priority and user type.</p>
-        <table>
+
+        <table class="mobile">
+          <tr>
+            <th class="high">High</th>
+          </tr>
+          <tr>
+            <td>All Users would like to choose a file type (Doc, Sheet, Note, Slides) when creating a new file.</td>
+          </tr>
+          <tr>
+            <th class="med">Medium</th>
+          </tr>
+          <tr>
+            <td>All Users would like to edit live and view collaborative activity real time with color coded type line and change footprints.</td>
+          </tr>
+          <tr>
+            <th class="low">Low</th>
+          </tr>
+          <tr>
+            <td>All Users would like to view version history to understand changes between two files.</td>
+          </tr>
+        </table>
+
+
+        <table class="desktop"> <!--hide this on mobile-->
           <tr>
             <th class="high">High</th>
             <th class="med">Medium</th>
@@ -267,9 +321,10 @@
             <td>All Users would like to view version history to understand changes between two files.</td>
           </tr>
         </table>
+
         <p>Priority dictates hierarchy, architecture, flow, and visual design. A minimum viable product is the initial goal so users first get what they need, then add nice-to-haves in succession. </p>
         <form>
-          <input class = "click-button" type="button" value="All User Stories" onclick="#" style="color:#030303"/>
+          <input class = "click-button landing" type="button" value="All User Stories" onclick="#" style="color:#030303"/>
         </form>
       </article>
 
@@ -277,17 +332,21 @@
       <article class = "case-sections">
         <h3 class = "process-steps"><span class = "yellow">5.</span> User Flows</h3>
         <p>The app is one big system made of little systems that talk to each other. Drafting the logical flow between action and result is the first step to architecting an effective experience.</p>
-        <img src="#">
-        <div class="btn-group">
-          <button>Social Feed</button>
-          <button>New Content</button>
-          <button>Quick Copy</button>
-          <button>Sharing</button>
-          <button>Sign Up</button>
+
+        <div class="carousel-container">
+          <p class="carousel-title">&nbsp;</p>
+          <div class="carousel js-flickity">
+            <img src="images/user-flows/social.png" title="Social Features" alt="Users have to constantly look across the screen to find file-related actions." />
+            <img src="images/ui-problems/feature-bloat.png" title="Feature Bloat" alt="What are all these features? What do they do? Is more really better?" />
+            <img src="images/ui-problems/nested-arch.png" title="Unnecessary Nesting" alt="Users have to click “settings” after clicking the settings icon to get to settings." />
+            <img src="images/ui-problems/unclear-feat.png" title="Ambiguous Features" alt="2x2 vs 3x3 grid icon - What’s the difference? What does the eye icon do? What is “Paper?”" />
+          </div>
+          <p class="caption">&nbsp;</p>
+
         </div>
         <p>Bare bones flow diagrams quickly reveal key decision points and unnecessary steps. Simplicity, accessibility, and efficiency are the goals. This means reducing steps, cross-referencing nodes, and grouping by common denominators.<p>
         <form>
-          <input class = "click-button" type="button" value="All User Flows" onclick="#" style="color:#030303" />
+          <input class = "click-button landing" type="button" value="All User Flows" onclick="#" style="color:#030303" />
         </form>
       </article>
 
@@ -295,33 +354,47 @@
       <article class = "case-sections">
         <h3 class = "process-steps"><span class = "yellow">6.</span> Wireframes</h3>
         <p>User flows are fleshed out through wireframes to get a sense of a real world product. I start on paper, go through numerous versions, annotate, and repeat until the user flows are satisfied.</p>
-        <img src="#">
-        <img src="#">
-        <img src="#">
-        <p>Then, I draft Lo-Fi wireframes on Balsamiq because my handwriting is that of a young child (or a doctor… you decide). Also to stay focused on content strategy.</p>
-        <img src="#">
-        <div class="btn-group">
-          <button>Social Feed</button>
-          <button>New Content</button>
-          <button>Quick Copy</button>
-          <button>Sharing</button>
-          <button>Sign Up</button>
+
+        <div class="carousel-container">
+          <p class="carousel-title">&nbsp;</p>
+          <div class="carousel js-flickity">
+            <img src="images/sketches/dash.png" title="Dashboard" alt="Lauren is a designer who needs a simple and quick interface to bounce ideas to her team and manager. " />
+            <img src="images/sketches/social.png" title="Navigation" alt="Jacob is a busy engineering student who needs to store and organize assignments for access from any device." />
+            <img src="images/sketches/sign-up.png" title="Quick Sign Up" alt="Mark is a technical product manager who uses cloud to manage versions across multiple project materials." />
+          </div>
+          <p class="caption yellow">&nbsp;</p>
         </div>
+
+        <p>Then, I draft Lo-Fi wireframes on Balsamiq because my handwriting is that of a young child (or a doctor… you decide). Also to stay focused on content strategy.</p>
+
+        <div class="carousel-container">
+          <p class="carousel-title">&nbsp;</p>
+          <div class="carousel js-flickity">
+            <img src="images/wireframe/newfile.png" title="Dashboard" alt="Lauren is a designer who needs a simple and quick interface to bounce ideas to her team and manager. " />
+            <img src="images/wireframe/version.png" title="Version History" alt="Jacob is a busy engineering student who needs to store and organize assignments for access from any device." />
+            <img src="images/wireframe/social.png" title="Social Feed" alt="Mark is a technical product manager who uses cloud to manage versions across multiple project materials." />
+            <img src="images/wireframe/live.png" title="Live Editing" alt="Jacob is a busy engineering student who needs to store and organize assignments for access from any device." />
+            <img src="images/wireframe/details.png" title="File Details" alt="Mark is a technical product manager who uses cloud to manage versions across multiple project materials." />
+
+          </div>
+          <p class="caption yellow">&nbsp;</p>
+        </div>
+
         <form>
-          <input class = "click-button" type="button" value="Wireframe Prototype" onclick="#" style="color:#030303"/>
+          <input class = "click-button landing" type="button" value="Wireframe Prototype" onclick="#" style="color:#030303"/>
         </form>
       </article>
 
       <!-- User Testing 1 -->
       <article class = "case-sections">
         <h3 class = "process-steps"><span class = "yellow">7.</span> User Testing - First Round</h3>
-        <h4>What <span class = "worked">Worked</span></h4>
+        <h4 class = "chart-title">What <span class = "low">Worked</span></h4>
         <p>Users were able to create, organize, and share files with no issues. Navigation was quick and easy for the users.</p>
-        <h4>What <span class = "didnotwork">Didn't</span></h4>
+        <h4 class ="chart-title">What <span class = "high">Didn't</span></h4>
         <p>When presented with two buttons, the users naturally click the bigger or bottom-most button without reading the text. Having two buttons creates a tension between options. In the login page, some users blindly clicked the “create account” button rather than “login.”</p>
-        <img src="#">
+        <img src="images/user-test-1/signup.png" class="single-img">
         <p>In the Hi-Fi stage, the primary page action was kept as a button and revealed after fillout. The Login button reveals on password fillout to grab the users attention with only one option. The secondary action (creating an account) was changed to a link and moved away from the visual path.</p>
-        <img src="#">
+        <img src="images/user-test-1/signup2.png" class="single-img">
         <p>Users don’t want to have to think about every action. Little breadcrumbs can steer users to confusion or success. Laying the right path determines that success.</p>
       </article>
 
@@ -329,37 +402,45 @@
       <article class = "case-sections">
         <h3 class = "process-steps"><span class = "yellow">8.</span> Hi-Fi Mockups</h3>
         <p>The dash is refined in Sketch with all the visual branding elements. Icons were carefully selected and colorized to commonly accepted color schemes. Typography and color support visual cues, information hierarchy, and object selection.</p>
-        <img src="#">
-        <div class="btn-group">
-          <button>Social Feed</button>
-          <button>New Content</button>
-          <button>Quick Copy</button>
-          <button>Sharing</button>
-          <button>Sign Up</button>
+
+        <div class="carousel-container">
+          <p class="carousel-title">&nbsp;</p>
+          <div class="carousel js-flickity">
+            <img src="images/wireframe/newfile.png" title="Meet Lauren" alt="Lauren is a designer who needs a simple and quick interface to bounce ideas to her team and manager. " />
+            <img src="images/wireframe/version.png" title="Meet Jacob" alt="Jacob is a busy engineering student who needs to store and organize assignments for access from any device." />
+            <img src="images/wireframe/social.png" title="Meet Mark" alt="Mark is a technical product manager who uses cloud to manage versions across multiple project materials." />
+            <img src="images/wireframe/live.png" title="Meet Jacob" alt="Jacob is a busy engineering student who needs to store and organize assignments for access from any device." />
+            <img src="images/wireframe/details.png" title="Meet Mark" alt="Mark is a technical product manager who uses cloud to manage versions across multiple project materials." />
+
+          </div>
+          <p class="caption yellow">&nbsp;</p>
         </div>
+
+
       </article>
 
       <!-- User testing 2 -->
       <article class = "case-sections">
         <h3 class = "process-steps"><span class = "yellow">9.</span> User Testing - Round Two</h3>
-        <h4>What <span class = "worked">Worked</span></h4>
+        <h4 class = "chart-title">What <span class = "low">Worked</span></h4>
         <p>Users were able to easily navigate, manage files, invite members to groups, find file details and version history.</p>
-        <h4>What <span class = "didnotwork">Didn't</span></h4>
+        <h4 class ="chart-title">What <span class = "high">Didn't</span></h4>
         <p>The Sign up process was 3 steps, which was 2 steps too many. Users just wanted to click and go, thus it was made to be.</p>
-        <div class = "image-box">
-          <img src="#">
-          <img src="#">
-          <img src="#">
-        </div>
+        <img src="images/user-test-2/badsignup.png" class="single-img">
+        <img src="styles/icons/arrow.svg" class="goldarrow">
+        <img src="images/user-test-2/goodsignup.png" class="single-img">
         <p>Some users were confused with the “Group” action (creating new Groups or Folders). Some users associated the “new” button with files and folders, not new groups. Another user confused the “create folder” button with the “upload folder” button.</p>
-
-        <p>Thus, I removed the “Group” category and moved the “Create Group” button to the Social button in the navigation bar. I also moved the “Create New Folder” button to the “Create” category.</p>
-        <img src="#">
-        <img src="#">
+        <p><br>Thus, I removed the “Group” category and moved the “Create Group” button to the Social button in the navigation bar. I also moved the “Create New Folder” button to the “Create” category.</p>
+        <div class="img-row">
+          <img src="images/user-test-2/new-button.png" style="width:40%">
+          <img src="styles/icons/arrow.svg" style="padding: 29% 0">
+          <img src="images/user-test-2/new-new-button.png" style="width: 45%">
+        </div>
         <p>Reducing three categories to two reduces the cognitive load required to navigate. I added visual aids such as coloring and icons further differentiate the options.</p>
-        <p>In a preference test, 57% users preferred the second button layout with “...” button closer to screen center, and the star button left of the file name. The layout was changed based on proximity with relevant actions.</p>
-        <img src="#">
-        <img src="#">
+        <p><br>In a preference test, 57% users preferred the second button layout with “...” button closer to screen center, and the star button left of the file name. The layout was changed based on proximity with relevant actions.</p>
+        <img src="images/user-test-2/filerow-old.png" class="single-img">
+        <img src="styles/icons/arrow.svg" class="goldarrow">
+        <img src="images/user-test-2/filerow-new.png" class="single-img">
       </article>
 
       <!-- Brand Identity-->

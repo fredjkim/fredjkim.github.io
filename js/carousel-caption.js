@@ -1,20 +1,23 @@
 // external js: flickity.pkgd.js
 
-var flkty = new Flickity( '.carousel', {
-  imagesLoaded: true,
-  percentPosition: false
-});
+$('.carousel-container').each( function( i, container ) {
+  var $container = $( container );
 
-var caption = document.querySelector('.caption');
+  var $carousel = $container.find('.carousel').flickity({
+    cellSelector: 'img',
+    imagesLoaded: true,
+    percentPosition: false
+  });
+  var $caption = $container.find('.caption');
+  var $title = $container.find('.carousel-title');
+  var flkty = $carousel.data('flickity');
 
-flkty.on( 'select', function() {
-  // set image caption using img's alt
-  caption.textContent = flkty.selectedElement.alt;
-});
+  $carousel.on( 'select.flickity', function() {
+    // set image caption using img's alt
+    $caption.text( flkty.selectedElement.alt )
+    $title.text( flkty.selectedElement.title )
 
-var title = document.querySelector('.carousel-title');
 
-flkty.on( 'select', function() {
-  // set image caption using img's alt
-  title.textContent = flkty.selectedElement.title;
+  });
+
 });
