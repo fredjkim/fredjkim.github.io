@@ -522,7 +522,7 @@ font-family: sofia-pro-soft, sans-serif;  color: #FFC823;
 
 /* position dots in gallery */
 .flickity-page-dots {
-  bottom: 3%;
+  bottom: 5%;
 }
 /* white circles */
 .flickity-page-dots .dot {
@@ -565,7 +565,7 @@ font-family: sofia-pro-soft, sans-serif;  color: #FFC823;
 
 .single-img {
   width: 100%;
-  margin: 5% 0;
+  margin: 10% 0;
 }
 
 .img-row {
@@ -727,7 +727,7 @@ table.mobile {
 
 .chart-title {
   font-size: 1.3em;
-  margin: 5% 0 3% 0;
+  margin: 10% 0 3% 0;
   text-align: left;
 }
 
@@ -764,7 +764,7 @@ table.mobile {
 }
 
 .feature {
-  font-size: 1em;
+  font-size: 1.3em;
   margin: 0;
   margin-bottom: 5%;
   color: #030303;
@@ -778,7 +778,7 @@ table.mobile {
 .conc-title {
   font-size: 1.5em;
   margin: 0;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .conc-icon {
