@@ -159,7 +159,7 @@ a {
 /* Menu */
 .nav {
   display: inline-block;
-  margin: 1em 1em 0px;
+  margin: 1em;
   pointer-events: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;

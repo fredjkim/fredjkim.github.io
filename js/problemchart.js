@@ -10,4 +10,4 @@ percentDivs.forEach(percentDiv => {
 });
 
 //Automatically set 'grid-template-columns' value depending on no. of bars
-chart.style.setProperty('grid-template-columns', `repeat(${totalBars}, 1fr)`);
+chart.style.setProperty('grid-template-columns', `repeat(4, 1fr)`);
