@@ -34,7 +34,7 @@ body {
   background: #FFC823;
   padding: 3%;
   border-radius: 0.2em;
-  box-shadow: 0 .4em .1em rgba(0,0,0,0.4);
+  box-shadow: 0 .2em .1em rgba(0,0,0,0.4);
   margin-bottom: 1em;
   -webkit-appearance: none;
 }
@@ -53,7 +53,7 @@ body {
 
 .click-button:hover {
     background: #ffab00;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0.4em 0.1em rgba(0,0,0,0.3);
 
 }
 
@@ -165,7 +165,6 @@ a, h1, h2, h3, h4, footer{
   top: 0;
   left: 0;
   margin: 1em;
-  height: 20vh;
 }
 
 
@@ -442,7 +441,7 @@ th.case-table {
   margin-left: -7%;
 
   /* dim unselected */
-  opacity: 0.5;
+  opacity: 0.2;
   -webkit-transform: scale(0.85);
           transform: scale(0.85);
   -webkit-filter: blur(5px);
@@ -620,6 +619,11 @@ a.fa {
   margin-top: 5vh;
 }
 
+.chart.success {
+  height: 30vh;
+  margin-top:-3vh;
+}
+
 .bar {
   grid-row-end: 102;
   position: relative;
@@ -772,9 +776,13 @@ table.mobile {
   margin-top: 5%;
 }
 
-/* ----------------mobile FLIP----------------- */
 
-@media only screen and (orientation: landscape) {
+
+
+
+/* ----------------Mobile/Tablet Landscape----------------- */
+
+@media only screen and (orientation: landscape) and (max-width:1023px) {
   .landing-container {
     background: #030303;
     overflow: hidden;
@@ -831,13 +839,14 @@ table.mobile {
   }
 
   .proj-title {
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 0;
     color: #fffff0;
   }
 
   .proj-desc {
-    font-size: 1em;
+    font-size: 1.2em;
+    margin: 5% 0;
   }
 
   .proj-img-landing {
@@ -846,6 +855,7 @@ table.mobile {
       object-fit: cover;
       margin-top: 5vh;
       flex-shrink: 0;
+      height: 100vh;
       /* min-width: 100%; */
       /* min-height: 100%; */
   }
@@ -859,7 +869,7 @@ table.mobile {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 300px;
+    height: 350px;
     border-radius: 1em;
     margin-bottom: 10vh;
   }
@@ -890,7 +900,7 @@ table.mobile {
     color: #fffff0;
     list-style: none;
     padding-left: 0;
-    margin: .5em 0;
+    margin: 5% 0;
   }
 
   .ul-deskonly li {
@@ -898,11 +908,8 @@ table.mobile {
   }
 
   .name-desc {
-    position: absolute;
-    top: 0%;
-    left: 5%;
-    margin: 1em;
-    height: 20vh;
+    bottom: 0%;
+    padding: 1% 3%;
     width: 24vw;
   }
 
@@ -980,8 +987,22 @@ table.mobile {
     margin: 5% 0 3% 0;
   }
 
+  .chart {
+    height: 80vh;
+    margin-top: -45vh;
+  }
+
+  .chart.competition {
+    height: 30vh;
+  }
+
+  .chart.success {
+    height: 60vh;
+    margin-top:-10vh;
+  }
+
   .carousel img {
-    width: 40%;
+    width: 60%;
     margin-left: 0;
   }
 
@@ -993,8 +1014,8 @@ table.mobile {
     transform: translateX(300px);
   }
 
-  .flickity-prev-next-button.previous { left: 20vw; }
-  .flickity-prev-next-button.next { right: 20vw; }
+  .flickity-prev-next-button.previous { left: 10vw; }
+  .flickity-prev-next-button.next { right: 10vw; }
 
 
   .flickity-prev-next-button {
@@ -1126,7 +1147,7 @@ table.mobile {
 
   .proj-img-landing {
     height: 70vh;
-    margin-left: 20vw;
+    margin-left: 30vw;
     object-fit: cover;
     margin-top: 2vh;
     flex-shrink: 0;
@@ -1175,11 +1196,8 @@ table.mobile {
   }
 
   .name-desc {
-    position: absolute;
-    top: 5%;
-    left: 3%;
-    margin: 1em;
-    height: 20vh;
+    bottom: 0;
+    padding: 3% 5%;
     width: 25vw;
   }
 
@@ -1258,7 +1276,7 @@ table.mobile {
   }
 
   .carousel img {
-    width: 40%;
+    width: 70%;
     margin-left: 0;
   }
 
@@ -1270,8 +1288,8 @@ table.mobile {
     transform: translateX(300px);
   }
 
-  .flickity-prev-next-button.previous { left: 20vw; }
-  .flickity-prev-next-button.next { right: 20vw; }
+  .flickity-prev-next-button.previous { left: 8vw; }
+  .flickity-prev-next-button.next { right: 8vw; }
 
 
   .flickity-prev-next-button {
@@ -1455,11 +1473,7 @@ table.mobile {
   }
 
   .name-desc {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    margin: 1em;
-    height: 20vh;
+    padding: 10vh 10%;
     width: 20vw;
   }
 
@@ -1550,8 +1564,8 @@ table.mobile {
     transform: translateX(300px);
   }
 
-  .flickity-prev-next-button.previous { left: 20vw; }
-  .flickity-prev-next-button.next { right: 20vw; }
+  .flickity-prev-next-button.previous { left: 25vw; }
+  .flickity-prev-next-button.next { right: 25vw; }
 
 
   .flickity-prev-next-button {
