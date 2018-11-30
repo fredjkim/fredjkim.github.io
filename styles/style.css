@@ -859,7 +859,7 @@ table.mobile {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 80vh;
+    height: 300px;
     border-radius: 1em;
     margin-bottom: 10vh;
   }
@@ -1061,7 +1061,7 @@ table.mobile {
 
 /* ----------------TABLET----------------- */
 
-@media (min-width: 768px) and (max-width:1024px) and (orientation:portrait) {
+@media (min-width: 768px) and (max-width:1024px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2){
   .landing-container {
     background: #030303;
     overflow: hidden;
