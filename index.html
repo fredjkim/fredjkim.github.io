@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link href="styles/hamburger.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -25,7 +27,7 @@
       <!-- The nav menu -->
       <nav class="nav">
           <a class="nav-item" id="link" href="#">Work</a>
-          <a class="nav-item" href="">About</a>
+          <a class="nav-item" href="about.html">About</a>
           <a class="nav-item" href="">Resume</a>
           <a class="nav-item" href="">Contact</a>
       </nav>
@@ -39,7 +41,9 @@
       <article class = "work-box">
         <img src="images/backimage.png" class="backimage">
         <img src="images/backimage2.png" class="backimage-desk">
-        <h1 class = "header hidden">I'm <span class="yellow">Fred Kim</span>, a UX designer based in San Francisco. I turn moments into experiences at the intersection of visual immersion and practical flow.</h1>
+        <div data-aos="fade-up" data-aos-duration="800">
+          <h1 class = "header">I'm <span class="yellow">Fred Kim</span>, a UX designer based in San Francisco. I turn moments into experiences at the intersection of visual immersion and practical flow.</h1>
+        </div>
 
         <a name="id3"/>
         <div id = "thinker">
@@ -49,10 +53,10 @@
       </article>
 
       <div class = "proj-container">
-
-        <article class = "card">
+        <div data-aos="fade-up" data-aos-duration="800">
+          <article class = "card">
           <img src ="images/skylake-gold-mockup.png" class="proj-img-landing"  onclick="window.location.href='project.html'" >
-          <div class = "name-desc hidden">
+          <div class = "name-desc">
             <h2 class= "proj-title">Skylake</h2>
             <h3 class = "proj-desc">Cloud with faster workflow, easier navigation, and less bloat.</h3>
             <div class = "deskonly">
@@ -89,10 +93,12 @@
           </div>
 
         </article>
+        </div>
 
-        <article class = "card">
+        <div data-aos="fade-up" data-aos-duration="800">
+          <article class = "card">
           <img src ="images/skylake-gold-mockup.png" class="proj-img-landing"  onclick="window.location.href='project.html'" >
-          <div class = "name-desc hidden">
+          <div class = "name-desc">
             <h2 class= "proj-title">Skylake</h2>
             <h3 class = "proj-desc">Cloud with faster workflow, easier navigation, and less bloat.</h3>
             <div class = "deskonly">
@@ -129,10 +135,12 @@
           </div>
 
         </article>
+        </div>
 
-        <article class = "card">
+        <div data-aos="fade-up" data-aos-duration="800">
+          <article class = "card">
           <img src ="images/skylake-gold-mockup.png" class="proj-img-landing"  onclick="window.location.href='project.html'" >
-          <div class = "name-desc hidden">
+          <div class = "name-desc">
             <h2 class= "proj-title">Skylake</h2>
             <h3 class = "proj-desc">Cloud with faster workflow, easier navigation, and less bloat.</h3>
             <div class = "deskonly">
@@ -169,6 +177,7 @@
           </div>
 
         </article>
+        </div>
 
 
 
@@ -221,8 +230,12 @@
 
 
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/fadein.js"></script>
     <script src="js/anchor.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
 
   </body>
 
