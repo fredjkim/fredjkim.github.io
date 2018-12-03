@@ -13,6 +13,7 @@
   </head>
   <body>
     <div class="hamburger-container">
+
     <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
       <input id="toggle" type="checkbox">
       <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
@@ -45,7 +46,7 @@
       <!-- Summary -->
       <article class = "case-sections">
         <h1 class = "main-sections">Summary</h1>
-        <h3 class = "main-points">Skylake is a cloud service that replaces bloat with easy workflow through a simple interface.</h3>
+        <h3 class = "main-points">Skylake is a cloud app designed for a faster, cleaner, and more intimate collaboration space.</h3>
         <form>
           <input class = "click-button casestudy" type="button" value="See InVision Prototype" onclick="https://invis.io/SMOBONT8ZKD"/>
         </form>
@@ -332,13 +333,13 @@
 
         <div class="carousel-container">
           <p class="carousel-title">&nbsp;</p>
-          <div class="carousel js-flickity">
-            <img src="images/user-flows/social.png" title="Social Features" alt="The user can interact socially with other members via dedicated channels" />
-            <img src="images/ui-problems/feature-bloat.png" title="Feature Bloat" alt="What are all these features? What do they do? Is more really better?" />
-            <img src="images/ui-problems/nested-arch.png" title="Unnecessary Nesting" alt="Users have to click “settings” after clicking the settings icon to get to settings." />
-            <img src="images/ui-problems/unclear-feat.png" title="Ambiguous Features" alt="2x2 vs 3x3 grid icon - What’s the difference? What does the eye icon do? What is “Paper?”" />
+          <div class="carousel js-flickity" data-flickity='{ "adaptiveHeight": true }'>
+            <img src="images/user-flows/new-content.png" title="New Content" alt="Three different branches of content creation can be managed with a single click." />
+            <img src="images/user-flows/social.png" class="flows" title="Social Feed" alt="Social features are accessible all within a dedicated and diverse feed." />
+            <img src="images/user-flows/share.png" class="flows" title="Sharing" alt="Sharing is accessible from any page and customizable for user rights." />
+            <img src="images/user-flows/comment.png" class="flows" title="Commenting" alt="Comments can be added a number of ways. Just pick your favorite." />
           </div>
-          <p class="caption">&nbsp;</p>
+          <p class="caption yellow">&nbsp;</p>
 
         </div>
         <p>Bare bones flow diagrams quickly reveal key decision points and unnecessary steps. Simplicity, accessibility, and efficiency are the goals. This means reducing steps, cross-referencing nodes, and grouping by common denominators.<p>

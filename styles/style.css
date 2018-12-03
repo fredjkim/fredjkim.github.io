@@ -70,6 +70,7 @@ body {
   box-shadow: 0 .2em .1em rgba(0,0,0,0.4);
   margin-bottom: 1em;
   -webkit-appearance: none;
+  -webkit-transition: 0.3s ease-in-out; /*safari and chrome */
 }
 
 .landing {
@@ -86,7 +87,6 @@ body {
 .click-button:hover {
     background: #ffab00;
     box-shadow: 0 0.4em 0.1em rgba(0,0,0,0.3);
-
 }
 
 .fred-logo {
@@ -510,7 +510,6 @@ textarea {
   display: block;
   width: 95%;
   margin-left: -7%;
-
   /* dim unselected */
   opacity: 0.2;
   -webkit-transform: scale(0.85);
@@ -520,6 +519,8 @@ textarea {
   -webkit-transition: opacity 0.1s, -webkit-transform 0.1s, transform 0.1s, -webkit-filter 0.1s, filter 0.1s;
           transition: opacity 0.1s, transform 0.1s, filter 0.1s;
 }
+
+
 
 /* brighten selected image */
 img.is-selected {
@@ -563,8 +564,8 @@ font-family: sofia-pro-soft, sans-serif;  color: #FFC823;
   color: #FFC823;
 }
 /* closer to edge */
-.flickity-prev-next-button.previous { left: 0; }
-.flickity-prev-next-button.next { right: 0; }
+.flickity-prev-next-button.previous { left: 1em; }
+.flickity-prev-next-button.next { right: 1em; }
 /* hide disabled button */
 .flickity-prev-next-button:disabled {
   display: none;
@@ -668,7 +669,15 @@ footer {
 a.fa {
   font-size: 1em;
   padding: 5%;
+  -webkit-transition: 0.3s ease-in-out; /*safari and chrome */
+
 }
+
+a.fa:hover {
+  font-size: 1.75em;
+  color: #FFC823;
+}
+
 
 
 /*Chart styles*/
@@ -1072,6 +1081,7 @@ table.mobile {
     width: 60%;
     margin-left: 0;
   }
+
 
   .carousel {
     background: #030303;
@@ -1561,6 +1571,10 @@ table.mobile {
     margin: auto;
   }
 
+  .carousel img.flows {
+    width: 30%;
+  }
+
   table.desktop {
     display: table;
   }
@@ -1615,7 +1629,7 @@ table.mobile {
   }
 
   .carousel img {
-    width: 40%;
+    width: 50%;
     margin-left: 0;
   }
 
@@ -1627,8 +1641,8 @@ table.mobile {
     transform: translateX(300px);
   }
 
-  .flickity-prev-next-button.previous { left: 25vw; }
-  .flickity-prev-next-button.next { right: 25vw; }
+  .flickity-prev-next-button.previous { left: 20vw; }
+  .flickity-prev-next-button.next { right: 20vw; }
 
 
   .flickity-prev-next-button {

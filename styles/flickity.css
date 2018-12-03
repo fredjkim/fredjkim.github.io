@@ -52,7 +52,6 @@ https://flickity.metafizzy.co
 }
 
 .flickity-button:hover {
-  background: white;
   cursor: pointer;
 }
 
@@ -83,7 +82,7 @@ https://flickity.metafizzy.co
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: transparent;
+  background: rgba(3,3,3,0.3);
   /* vertically center */
   transform: translateY(-50%);
 }
