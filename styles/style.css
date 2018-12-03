@@ -1,14 +1,15 @@
-@keyframes fade-in {
-    from {opacity: 0; transform: scale(.9,.9)}
-    to {opacity: 1;}
-}
-.fade-in-element {
-  animation: fade-in 1.3s;
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between
 }
 
 /*--------About Page---------*/
 .about-header {
   padding: 0 1em;
+  max-width: 600px;
+  margin: auto;
 }
 
 .about-profile {
@@ -88,6 +89,11 @@ body {
 
 }
 
+.fred-logo {
+  height: 5em;
+  padding: 1em 0;
+}
+
 
 a, h1, h2, h3, h4, footer{
   font-family: sofia-pro-soft, sans-serif;
@@ -146,7 +152,7 @@ a, h1, h2, h3, h4, footer{
 }
 
 .header-content {
-  padding: 5% 0;
+  padding: 2em 0;
 }
 
 .header-text {
@@ -157,10 +163,11 @@ a, h1, h2, h3, h4, footer{
 }
 
 .case-study-hero {
-  height: 55vw;
-  margin-left: auto;
-  margin-top: 10%;
-  margin-bottom: -5%;
+  height: 55vh;
+  display: block;
+  margin: auto;
+  padding-top: 1em;
+  margin-bottom: -2em;
 }
 
 .card {
@@ -173,7 +180,7 @@ a, h1, h2, h3, h4, footer{
   height: 80vh;
   border-radius: 1em;
   margin: 0 0.5em;
-  margin-bottom: 7vh;
+  margin-bottom: 2em;
 }
 
 .proj-img-landing {
@@ -232,7 +239,7 @@ a, h1, h2, h3, h4, footer{
 
 
 #skylake-logo {
-  width: 100px;
+  width: 80px;
 }
 
 .proj-name {
@@ -332,16 +339,6 @@ a, h1, h2, h3, h4, footer{
 
 }
 
-
-.container.pink {
-  background-color: #F67FB9;
-}
-.container.gold {
-  background-color: #FFC823;
-}
-.container.blue {
-  background-color: #55A7EF;
-}
 
 .proj-container {
   position: relative;
@@ -454,6 +451,48 @@ th.case-table {
 
 }
 
+/*---------- Contact -----------------*/
+
+.feedback-input {
+  color: #fffff0;
+  font-family: sofia-pro-soft, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4;
+  background-color: rgba(3,3,3,.7);
+  border:2px solid #565656;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #FFC823; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+.contact-icon {
+  height: 4em;
+  margin: auto;
+  display: block;
+}
+
+.backimage-contact{
+  display: none;
+}
+
+.backimage-desk-contact {
+  display: block;
+  position: fixed;
+  z-index: -1;
+  height: 100vh;
+  margin-top: 10vh;
+}
 
 
 
@@ -621,9 +660,7 @@ p {
 }
 
 footer {
-  height: 20%;;
   font-size: 1.2em;
-  margin: auto;
   text-align: center;
   line-height: 1.5em;
 }
@@ -903,7 +940,7 @@ table.mobile {
     overflow: hidden;
     height: 350px;
     border-radius: 1em;
-    margin-bottom: 10vh;
+    margin-bottom: 2em;
   }
 
   .click-button {
@@ -946,9 +983,7 @@ table.mobile {
   }
 
   footer {
-    height: 20%;;
     font-size: 1.2em;
-    margin: auto;
     text-align: center;
     line-height: 1.5em;
   }
@@ -1196,7 +1231,7 @@ table.mobile {
     overflow: hidden;
     height: 40vh;
     border-radius: 1em;
-    margin-bottom: 10vh;
+    margin-bottom: 2em;
   }
 
   .card-bottom {
@@ -1234,9 +1269,7 @@ table.mobile {
   }
 
   footer {
-    height: 20%;;
     font-size: 1.2em;
-    margin: auto;
     text-align: center;
     line-height: 1.5em;
   }
@@ -1473,7 +1506,7 @@ table.mobile {
     overflow: hidden;
     height: 70vh;
     border-radius: 1em;
-    margin-bottom: 10vh;
+    margin-bottom: 2em;
   }
 
   .card-bottom {
@@ -1510,9 +1543,7 @@ table.mobile {
   }
 
   footer {
-    height: 20%;;
     font-size: 1.2em;
-    margin: auto;
     text-align: center;
     line-height: 1.5em;
   }

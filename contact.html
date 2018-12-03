@@ -1,0 +1,73 @@
+<!DOCTYPE hmtl>
+<html>
+  <head>
+    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/sja5ifc.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href="styles/hamburger.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <img src="images/backimage.png" class="backimage-contact">
+    <img src="images/backimage2.png" class="backimage-desk-contact">
+
+    <div class="hamburger-container flex-wrapper">
+    <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+      <input id="toggle" type="checkbox">
+      <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+
+      <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+      <label class="toggle-container" for="toggle">
+          <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+          <span class="button button-toggle"></span>
+      </label>
+      <!-- The nav menu -->
+      <nav class="nav">
+          <a class="nav-item" href="index.html#id3">Work</a>
+          <a class="nav-item" href="about.html">About</a>
+          <a class="nav-item" href="">Resume</a>
+          <a class="nav-item" href="contact.html">Contact</a>
+      </nav>
+    <!-- Contact form -->
+      <section class = "about-header">
+        <img src="styles/icons/bulb.svg" class="contact-icon">
+        <h1>Have an idea?<br> I'm all ears.</h1>
+        <form>
+          <input name="name" type="text" class="feedback-input" placeholder="Name" />
+          <input name="email" type="text" class="feedback-input" placeholder="Email" />
+          <textarea name="text" class="feedback-input" placeholder="Your message :)"></textarea>
+          <input class = "click-button" style="color:#030303;" type="button" value="Send" onclick=""/>
+        </form>
+
+      </section>
+
+      <footer class = "contact">
+        <img src="images/fred-logo.svg" class="fred-logo">
+        <br>
+        <span>Other ways to find me.</span>
+        <br>
+        <a href="https://www.instagram.com/fredjameskim/" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/fredjameskim/" class="fa fa-linkedin"></a>
+        <a href="contact.html" class="fa fa-envelope"></a>
+        <a href="https://dribbble.com/fredjkim" class="fa fa-dribbble"></a>
+        <a href="https://github.com/fredjkim" class="fa fa-github"></a>
+      </footer>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+
+
+
+</html>
