@@ -75,45 +75,6 @@ a {
 }
 
 
-#toggle:checked ~ .nav .nav-item:nth-child(1) {
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
-}
-
-#toggle:checked ~ .nav .nav-item:nth-child(1):before {
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
-}
-
-#toggle:checked ~ .nav .nav-item:nth-child(2) {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-}
-
-#toggle:checked ~ .nav .nav-item:nth-child(2):before {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-}
-
-#toggle:checked ~ .nav .nav-item:nth-child(3) {
-  -webkit-transition-delay: 0.05s;
-          transition-delay: 0.05s;
-}
-
-#toggle:checked ~ .nav .nav-item:nth-child(3):before {
-  -webkit-transition-delay: 0.05s;
-          transition-delay: 0.05s;
-}
-
-#toggle:checked ~ .nav .nav-item:nth-child(4) {
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-}
-
-#toggle:checked ~ .nav .nav-item:nth-child(4):before {
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-}
 
 #toggle:checked ~ .nav .nav-item:before {
   opacity: 0;
@@ -190,46 +151,6 @@ a {
           transform: scaleY(0.2);
   -webkit-transition: 0.5s, opacity 1s;
   transition: 0.5s, opacity 1s;
-}
-
-.nav-item:nth-child(1) {
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-}
-
-.nav-item:nth-child(1):before {
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-}
-
-.nav-item:nth-child(2) {
-  -webkit-transition-delay: 0.05s;
-          transition-delay: 0.05s;
-}
-
-.nav-item:nth-child(2):before {
-  -webkit-transition-delay: 0.05s;
-          transition-delay: 0.05s;
-}
-
-.nav-item:nth-child(3) {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-}
-
-.nav-item:nth-child(3):before {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-}
-
-.nav-item:nth-child(4) {
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
-}
-
-.nav-item:nth-child(4):before {
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
 }
 
 .nav-item:nth-child(1) {
