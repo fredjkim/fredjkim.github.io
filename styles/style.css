@@ -117,13 +117,10 @@ body {
   width: 100%;
 }
 
-
-
 .fred-logo {
   height: 5em;
   padding: 1em 0;
 }
-
 
 a, h1, h2, h3, h4, footer{
   font-family: sofia-pro-soft, sans-serif;
@@ -131,7 +128,6 @@ a, h1, h2, h3, h4, footer{
   font-style: normal;
   color: #fffff0;
 }
-
 
 .navbar {
   position: fixed;
@@ -161,7 +157,6 @@ a, h1, h2, h3, h4, footer{
   height: 47vw;
   left: 50%;
   margin-left: -25vw;
-
 }
 
 .img-front {
@@ -188,7 +183,6 @@ a, h1, h2, h3, h4, footer{
   display: block;
   text-align: center;
   margin: auto;
-
 }
 
 .case-study-hero {
@@ -219,7 +213,6 @@ a, h1, h2, h3, h4, footer{
   min-height: 100%;
 }
 
-
 .proj-img {
   width: 100%;
   z-index: 1;
@@ -234,8 +227,6 @@ a, h1, h2, h3, h4, footer{
   left: 0;
   margin: 1em;
 }
-
-
 
 .card-bottom {
   position: absolute;
@@ -264,8 +255,6 @@ a, h1, h2, h3, h4, footer{
   border-radius: 2em;
   margin-right: 0.25em;
 }
-
-
 
 #skylake-logo {
   width: 100px;
@@ -309,7 +298,6 @@ a, h1, h2, h3, h4, footer{
   background-size: cover;
   background-position: center;
 }
-
 
 .case-study-text {
   font-size: 1.5em;
@@ -368,7 +356,6 @@ a, h1, h2, h3, h4, footer{
 
 }
 
-
 .proj-container {
   position: relative;
   margin: auto;
@@ -385,8 +372,6 @@ a, h1, h2, h3, h4, footer{
   margin: auto;
 }
 
-
-
 .proj-title {
   font-size: 2em;
   margin: 0;
@@ -401,7 +386,6 @@ a, h1, h2, h3, h4, footer{
   line-height: 1.3em;
   margin: 2% 0 5% 0;
   color: #fffff0;
-
 }
 
 
@@ -416,7 +400,6 @@ a, h1, h2, h3, h4, footer{
     float: left;
     text-align: center;
     width: 33%;
-
 }
 
 .row:after {
@@ -441,9 +424,6 @@ a, h1, h2, h3, h4, footer{
   font-weight: 400;
   margin: 0;
 }
-
-
-
 
 table {
   width: 100%;
@@ -476,7 +456,6 @@ th.case-table {
   font-size: 1.5em;
   color: #fffff0;
 }
-
 
 .border {
   border-left: 1px solid #fffff0;
@@ -528,11 +507,7 @@ textarea {
 }
 
 
-
-
 /* external css: flickity.css */
-
-
 
 .carousel {
   background: #030303;
@@ -552,8 +527,6 @@ textarea {
   -webkit-transition: opacity 0.1s, -webkit-transform 0.1s, transform 0.1s, -webkit-filter 0.1s, filter 0.1s;
           transition: opacity 0.1s, transform 0.1s, filter 0.1s;
 }
-
-
 
 /* brighten selected image */
 img.is-selected {
@@ -623,12 +596,6 @@ font-family: sofia-pro-soft, sans-serif;  color: #FFC823;
   border: 1px solid #FFC823;
 }
 
-
-
-
-
-
-
 /* Case Study */
 .study-content {
   text-align: center;
@@ -647,8 +614,6 @@ font-family: sofia-pro-soft, sans-serif;  color: #FFC823;
   margin: 5% 0;
   line-height: 1.4;
 }
-
-
 
 .single-img {
   width: 100%;
@@ -693,7 +658,6 @@ p {
   text-align: left;
   padding-bottom: 5px;
 }
-
 
 
 .scroll {
