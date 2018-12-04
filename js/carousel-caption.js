@@ -16,8 +16,6 @@ $('.carousel-container').each( function( i, container ) {
     // set image caption using img's alt
     $caption.text( flkty.selectedElement.alt )
     $title.text( flkty.selectedElement.title )
-
-
   });
 
 });
