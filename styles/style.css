@@ -7,7 +7,6 @@
 
 .mailto {
   display: block;
-  text-decoration: underline;
   color: #FFC823;
   padding: 10% 0;
   -webkit-transition: 0.3s ease-in-out;
@@ -15,6 +14,7 @@
 }
 
 .mailto:hover {
+  text-decoration: underline;
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -118,8 +118,8 @@ body {
 }
 
 .fred-logo {
-  height: 5em;
-  padding: 1em 0;
+  height: 4em;
+  padding: 5%;
 }
 
 a, h1, h2, h3, h4, footer{
@@ -488,10 +488,17 @@ textarea {
   resize:vertical;
 }
 
-.contact-icon {
+.bulb-icon {
   height: 4em;
+  padding-top: 1em;
   margin: auto;
   display: block;
+}
+
+.envelope-icon {
+  height: 1em;
+  margin-bottom: -0.15em;
+  margin-right: 0.5em;
 }
 
 .backimage-contact{
