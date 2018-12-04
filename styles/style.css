@@ -89,6 +89,23 @@ body {
   -webkit-transition: 0.3s ease-in-out; /*safari and chrome */
 }
 
+.click-button:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background: #ffbf00;
+  box-shadow: 0 0.4em 0.3em rgba(0,0,0,0.3);
+}
+
+.click-button:active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  background: #ffdc8c;
+  box-shadow: 0 .2em .1em rgba(0,0,0,0.4);
+  -webkit-transition: 0.1s ease-in-out; /*safari and chrome */
+}
+
 .landing {
   margin-top: 1em;
   margin-bottom: 0;
@@ -100,13 +117,7 @@ body {
   width: 100%;
 }
 
-.click-button:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    background: #ffbf00;
-    box-shadow: 0 0.4em 0.1em rgba(0,0,0,0.3);
-}
+
 
 .fred-logo {
   height: 5em;
