@@ -130,6 +130,7 @@ a, h1, h2, h3, h4, footer{
   font-weight: 600;
   font-style: normal;
   color: #fffff0;
+  font-size: 1em;
 }
 
 .navbar {
@@ -148,8 +149,14 @@ a, h1, h2, h3, h4, footer{
 .landing-container {
   background: #000;
   overflow: hidden;
-  margin: auto;
+  margin: 0 1em;
   text-align: left;
+  height: 80vh;
+}
+
+.logo-container {
+  position: relative;
+  margin: auto;
   height: 50vw;
 }
 
@@ -278,7 +285,7 @@ a, h1, h2, h3, h4, footer{
   position: fixed;
   z-index: -1;
   width: 100%;
-  margin-top: -20vh;
+  margin-top: -80vh;
   left: 0%;
 }
 
@@ -311,9 +318,9 @@ a, h1, h2, h3, h4, footer{
 .header {
   position: relative;
   text-align: left;
-  font-size: 1.58em;
-  line-height: 1.5;
-  margin: 10% 0 10% 0;
+  font-size: 1.5em;
+  line-height: 1.4;
+  margin: 10% 0;
 }
 
 .sub-header {
@@ -340,13 +347,13 @@ a, h1, h2, h3, h4, footer{
 
 #thinker {
   height: 10%;
-  padding: 10% 0;
+  padding: 0;
 }
 
 .work-text {
   color: #FFC823;
   font-size: 2em;
-  margin: 0;
+  margin: -0.3em 0 0.5em 0;
 }
 
 .container {
@@ -926,10 +933,14 @@ table.mobile {
     overflow: hidden;
     margin: auto;
     text-align: left;
-    height: 40vh;
+    height: 80vh;
   }
 
-
+.logo-container {
+    position: relative;
+    margin: auto;
+    height: 40vh;
+}
 
   .img-back {
     position: absolute;
@@ -938,7 +949,6 @@ table.mobile {
     height: 37vh;
     left: 50%;
     margin-left: -20vh;
-
   }
 
   .img-front {
@@ -960,21 +970,17 @@ table.mobile {
     position: fixed;
     z-index: -1;
     height: 100vh;
-    margin-top: -40vh;
-    margin-left: 25vw;
+    margin-top: -80vh;
+    margin-left: 20vw;
     left: 0%;
   }
 
   .header {
     position: relative;
     text-align: center;
-    width: 650px;
+    width: 600px;
     line-height: 1.5;
     margin: auto;
-  }
-
-  #thinker {
-      padding: 7% 0 3% 0;
   }
 
   .proj-title {
@@ -984,7 +990,7 @@ table.mobile {
   }
 
   .proj-desc {
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 5% 0;
   }
 
@@ -1229,28 +1235,31 @@ table.mobile {
     overflow: hidden;
     margin: auto;
     text-align: left;
-    height: 60vh;
-    margin-top: -5%;
+    height: 80vh;
+  }
+
+  .logo-container {
+    height: 30vh;
   }
 
 
   .img-back {
     position: absolute;
     object-fit: cover;
-    width: 60vh;
-    height: 60vh;
+    width: 30vh;
+    height: 27vh;
     left: 50%;
-    margin-left: -30vh;
+    margin-left: -15vh;
 
   }
 
   .img-front {
     position: absolute;
     object-fit: cover;
-    width: 60vh;
-    height: 65vh;
+    width: 30vh;
+    height: 30vh;
     left: 50%;
-    margin-left: -30vh;
+    margin-left: -15vh;
     opacity: 0.9;
   }
 
@@ -1263,22 +1272,18 @@ table.mobile {
     position: fixed;
     z-index: -1;
     height: 100vh;
-    margin-top: -40vh;
-    margin-left: 25vw;
+    margin-top: -80vh;
+    margin-left: 0;
     left: 0%;
   }
 
   .header {
     position: relative;
-    text-align: center;
+    text-align: left;
     width: 650px;
-    font-size: 2em;
-    line-height: 1.5;
+    font-size: 3em;
+    line-height: 1.4;
     margin: auto;
-  }
-
-  #thinker {
-      padding: 7% 0 3% 0;
   }
 
   .proj-title {
@@ -1506,26 +1511,32 @@ table.mobile {
     overflow: hidden;
     margin: auto;
     text-align: left;
-    height: 40vh;
+    height: 80vh;
+  }
+
+  .logo-container {
+    position: relative;
+    margin: auto;
+    height: 30vh;
   }
 
   .img-back {
     position: absolute;
     object-fit: cover;
-    width: 40vh;
-    height: 37vh;
+    width: 30vh;
+    height: 27vh;
     left: 50%;
-    margin-left: -20vh;
+    margin-left: -15vh;
 
   }
 
   .img-front {
     position: absolute;
     object-fit: cover;
-    width: 40vh;
-    height: 40vh;
+    width: 30vh;
+    height: 30vh;
     left: 50%;
-    margin-left: -20vh;
+    margin-left: -15vh;
     opacity: 0.9;
   }
 
@@ -1538,22 +1549,21 @@ table.mobile {
     position: fixed;
     z-index: -1;
     height: 100vh;
-    margin-top: -40vh;
+    margin-top: -80vh;
     margin-left: 25vw;
     left: 0%;
   }
 
   .header {
-    position: relative;
     text-align: center;
-    width: 650px;
-    font-size: 2em;
-    line-height: 1.5;
+    width: 800px;
+    font-size: 2.5em;
     margin: auto;
+    padding: 0;
   }
 
   #thinker {
-      padding: 7% 0 3% 0;
+      padding:;
   }
 
   .proj-title {
@@ -1645,6 +1655,8 @@ table.mobile {
 
   table.desktop {
     display: table;
+    width: 140%;
+    margin-left: -20%;
   }
 
   table.mobile {
@@ -1677,7 +1689,7 @@ table.mobile {
   }
 
   .proj-img {
-    height: 550px;
+    height: 700px;
     width: auto;
     z-index: 1;
     position: absolute;
@@ -1728,7 +1740,7 @@ table.mobile {
   }
 
   .grid2x2 {
-    margin-top: 75%;
+    margin-top: 570px;
     width: 120%;
     margin-left: -10%;
   }
