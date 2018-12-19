@@ -14,40 +14,24 @@
   </head>
 
   <body>
-    <div class="hamburger-container thetop">
-    <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
-      <input id="toggle" type="checkbox">
-      <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
-
-      <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
-      <label class="toggle-container" for="toggle">
-          <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
-          <span class="button button-toggle"></span>
-      </label>
       <!-- The nav menu -->
-      <nav class="nav">
-          <a class="nav-item" id="link" href="#">Work</a>
-          <a class="nav-item" href="about.html">About</a>
-          <a class="nav-item" href="Fred_Kim_Resume.pdf">Resume</a>
-          <a class="nav-item" href="contact.html">Contact</a>
+
+      <nav id="navbar">
+          <a href="index.html" class="home-button"><img src="images/logo2.svg"></a>
+          <div class="right-align">
+            <a href="about.html">About</a>
+            <a href="Fred_Kim_Resume.pdf" target="_blank">Resume</a>
+            <a href="contact.html">Contact</a>
+          </div>
       </nav>
 
-      <article class = "landing-container">
-        <div class = "logo-container">
-          <img src="images/sun.gif" class="img-back">
-          <img src="styles/icons/cutout.svg" class ="img-front">
-        </div>
-        <div data-aos="fade-up" data-aos-duration="800">
-          <h1 class = "header">I'm <span class="yellow">Fred Kim</span>, a UX designer based in San Francisco. I turn moments into experiences at the intersection of visual immersion and practical flow.</h1>
-        </div>
+      <article class = "landing-container thetop">
+        <img src="images/logo3.svg">
+          <h1 data-aos="fade-up" data-aos-duration="800">I'm <span class="yellow">Fred Kim</span>, a UX designer based in San Francisco. I create friendly, aesthetic, & data-driven products where trust grows between businesses and users.</h1>
       </article>
 
       <!-- "Work" divider-->
       <article class = "work-box">
-        <img src="images/backimage.png" class="backimage">-->
-        <img src="images/backimage2.jpg" class="backimage-desk">
-
-
         <a name="id3"/>
         <div id = "thinker">
           <img src="styles/icons/thinker.svg" class ="work-icon">
@@ -98,113 +82,18 @@
         </article>
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="800">
-          <article class = "card">
-          <img src ="images/skylake-gold-mockup.jpg" class="proj-img-landing"  onclick="window.location.href='project.html'" >
-          <div class = "name-desc">
-            <h2 class= "proj-title">Project 2</h2>
-            <h3 class = "proj-desc">#Clear and concise description</h3>
-            <div class = "deskonly">
-              <ul class = "ul-deskonly">
-                <li><img src="styles/icons/design-white.svg" class = "icon">Designer</li>
-                <li><img src="styles/icons/research-white.svg" class = "icon">Researcher</li>
-                <li><img src="styles/icons/fingerprint.svg" class = "icon">Brand Creator</li>
-              </ul>
-              <form>
-                <input class = "click-button" type="button" value="See Case Study" onclick="window.location.href='project.html'" />
-              </form>
-            </div>
-          </div>
-          <div class = "card-bottom">
-            <div class= "role-study">
-              <section class="row">
-                <div class="column">
-                  <img src="styles/icons/design-white.svg" class = "icon">
-                  <p class = "role-col">Design</p>
-                </div>
-                <div class="column center-col">
-                  <img src="styles/icons/research-white.svg" class = "icon">
-                  <p class = "role-col">Research</p>
-                </div>
-                <div class="column">
-                  <img src="styles/icons/fingerprint.svg" class = "icon">
-                  <p class = "role-col">Branding</p>
-                </div>
-              </section>
-            </div>
-            <form>
-              <input class = "click-button" type="button" value="See Case Study" onclick="window.location.href='project.html'" />
-            </form>
-          </div>
 
-        </article>
-        </div>
-
-        <div data-aos="fade-up" data-aos-duration="800">
-          <article class = "card">
-          <img src ="images/skylake-gold-mockup.jpg" class="proj-img-landing"  onclick="window.location.href='project.html'" >
-          <div class = "name-desc">
-            <h2 class= "proj-title">Project 3</h2>
-            <h3 class = "proj-desc">#Clear and concise description</h3>
-            <div class = "deskonly">
-              <ul class = "ul-deskonly">
-                <li><img src="styles/icons/design-white.svg" class = "icon">Designer</li>
-                <li><img src="styles/icons/research-white.svg" class = "icon">Researcher</li>
-                <li><img src="styles/icons/fingerprint.svg" class = "icon">Brand Creator</li>
-              </ul>
-              <form>
-                <input class = "click-button" type="button" value="See Case Study" onclick="window.location.href='project.html'" />
-              </form>
-            </div>
-          </div>
-          <div class = "card-bottom">
-            <div class= "role-study">
-              <section class="row">
-                <div class="column">
-                  <img src="styles/icons/design-white.svg" class = "icon">
-                  <p class = "role-col">Design</p>
-                </div>
-                <div class="column center-col">
-                  <img src="styles/icons/research-white.svg" class = "icon">
-                  <p class = "role-col">Research</p>
-                </div>
-                <div class="column">
-                  <img src="styles/icons/fingerprint.svg" class = "icon">
-                  <p class = "role-col">Branding</p>
-                </div>
-              </section>
-            </div>
-            <form>
-              <input class = "click-button" type="button" value="See Case Study" onclick="window.location.href='project.html'" />
-            </form>
-          </div>
-
-        </article>
-        </div>
 
       </div>
 
-      <footer>
-        <div class='scroll'>
-          <img src="styles/icons/scrolltotop.svg" class="scrolltop-icon vert-move">
-        </div>
-        <img src="images/fred-logo.svg" class="fred-logo">
-        <br>
-        <span>Questions, comments, coffee?</span>
-        <br>
-        <span>Let's <span class = "yellow">connect.</span></span>
-        <br>
-        <a href="https://www.instagram.com/fredjameskim/" class="fa fa-instagram"></a>
-        <a href="https://www.linkedin.com/in/fredjameskim/" class="fa fa-linkedin"></a>
-        <a href="contact.html" class="fa fa-envelope"></a>
-        <a href="https://dribbble.com/fredjkim" class="fa fa-dribbble"></a>
-        <a href="https://github.com/fredjkim" class="fa fa-github"></a>
-      </footer>
+      <div class='scrolltop'>
+        <div class='scroll vert-move'><i class="fa fa-4x fa-angle-up" style = "color: #4c4744;"></i></div>
+      </div>
 
-    </div> <!--end of hamburger container-->
+
 
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/anchor.js"></script>
+    <script src="js/nav-hide.js"></script>
     <script src="js/scrolltop.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -220,4 +109,19 @@
       gtag('config', 'UA-130500098-1');
     </script>
   </body>
+
+
+  <footer>
+    <img src="images/logo.svg" class="fred-logo">
+    <br>
+    <span>Questions, comments, coffee?</span>
+    <br>
+    <span>Let's <span class = "yellow">connect.</span></span>
+    <br>
+    <a href="https://www.instagram.com/fredjameskim/" class="fa fa-instagram" target="_blank"></a>
+    <a href="https://www.linkedin.com/in/fredjameskim/" class="fa fa-linkedin" target="_blank"></a>
+    <a href="contact.html" class="fa fa-envelope"></a>
+    <a href="https://dribbble.com/fredjkim" class="fa fa-dribbble" target="_blank"></a>
+    <a href="https://github.com/fredjkim" class="fa fa-github" target="_blank"></a>
+  </footer>
 </html>

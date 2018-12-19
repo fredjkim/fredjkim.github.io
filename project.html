@@ -2,55 +2,66 @@
 <html>
   <head>
     <title>Skylake Case Study</title>
-
-
     <link rel="stylesheet" type="text/css" href="reset.css">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://use.typekit.net/sja5ifc.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles/flickity.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="styles/hamburger.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   </head>
   <body>
-    <div class="hamburger-container thetop">
 
-    <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
-      <input id="toggle" type="checkbox">
-      <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
 
-      <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
-      <label class="toggle-container" for="toggle">
-          <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
-          <span class="button button-toggle"></span>
-      </label>
-      <!-- The nav menu -->
-      <nav class="nav">
-          <a class="nav-item" href="index.html#id3">Work</a>
-          <a class="nav-item" href="about.html">About</a>
-          <a class="nav-item" href="Fred_Kim_Resume.pdf">Resume</a>
-          <a class="nav-item" href="contact.html">Contact</a>
-      </nav>
+    <nav id="navbar" class="proj-nav">
+        <a href="index.html" class="home-button"><img src="images/logo2.svg"></a>
+
+        <div class="dropdown">
+          <button onclick="dropdown()" class="dropbtn">Jump to <i class="fa fa-caret-down"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#summary">Summary</a>
+            <a href="#r&d">Research & Discovery</a>
+            <a href="#ca">Competitive Analysis</a>
+            <a href="#pe">Personas</a>
+            <a href="#st">User Stories</a>
+            <a href="#fl">User Flows</a>
+            <a href="#lf">Lo-Fi Wireframes</a>
+            <a href="#ut1">User Test #1</a>
+            <a href="#hf">Hi-Fi Mockups</a>
+            <a href="#ut2">User Test #2</a>
+            <a href="#bi">Brand Identity</a>
+            <a href="#co">Conclusion</a>
+          </div>
+        </div>
+        <div class="right-align mob-size">
+          <a href="about.html">About</a>
+          <a href="Fred_Kim_Resume.pdf" target="_blank">Resume</a>
+          <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+
+
     <!-- hero image -->
-    <section class = "header-container">
+    <section class = "header-container thetop">
       <!--<img src="images/skylake-mockup.png" class="case-study-hero">-->
       <article class = "header-content">
         <div class = "header-text">
-          <img src="styles/icons/logo.svg" id = "skylake-logo">
-          <h1 class = "proj-name">Skylake</h1>
+          <!--<img src="styles/icons/logo.svg" id = "skylake-logo">
+          <h1 class = "proj-name">Skylake</h1>-->
+          <img src = "images/All_Screen.png" id="skylake-hero">
+
         </div>
       </article>
     </section>
 
     <section class = "study-content">
       <!-- Summary -->
-      <article class = "case-sections">
+      <article class = "case-sections" id="summary">
         <h1 class = "main-sections">Summary</h1>
         <h3 class = "main-points">Skylake is a cloud app designed for a faster, cleaner, and more intimate collaboration experience.</h3>
-        <table align = "center" class = "case-study-table desktop" style="padding:5%;">
+        <table align = "center" class = "case-study-table desktop">
           <tr>
             <th class = "case-table">Roles</th>
             <th class = "case-table">Deliverables</th>
@@ -98,34 +109,34 @@
         </table>
 
         <form>
-          <input class = "click-button casestudy" type="button" value="See InVision Prototype" onclick="window.location.href='https://invis.io/SMOBONT8ZKD'"/>
+          <input class = "click-button casestudy" type="button" value="See InVision Prototype" target="_blank" onclick="window.open('https://invis.io/SMOBONT8ZKD')"/>
         </form>
 
       </article>
 
       <!-- Problem -->
-      <article class = "case-sections">
+      <article class = "case-sections grey" id="problem">
         <h1 class = "main-sections">The Problem</h1>
         <h3 class = "main-points">Users have four main frustrations with current cloud apps</h3>
 
-        <div class="chart-container" style="margin-bottom: 15%;">
-          <div class="chart">
-            <div class="bar" data-aos="fade-up" data-aos-duration="1000">
+        <div class="chart-container-problem">
+          <div class="chart-problem">
+            <div class="bar" data-aos="fade-up" data-aos-duration="1200">
                 <div class="bar-percent">32%</div>
                 <div class="bar-problem">Tedious<br>Navigation</div>
                 <div class="bar-name">😓</div>
             </div>
-            <div class="bar" data-aos="fade-up" data-aos-duration="1200">
+            <div class="bar" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                 <div class="bar-percent">25%</div>
                 <div class="bar-problem">Ambiguous<br>Features</div>
                 <div class="bar-name">😕</div>
             </div>
-            <div class="bar" data-aos="fade-up" data-aos-duration="1400">
+            <div class="bar" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                 <div class="bar-percent">25%</div>
                 <div class="bar-problem">Too Many<br>Features</div>
                 <div class="bar-name">😧</div>
             </div>
-            <div class="bar" data-aos="fade-up" data-aos-duration="1600">
+            <div class="bar" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                 <div class="bar-percent">19%</div>
                 <div class="bar-problem">Cluttered<br>Workspace</div>
                 <div class="bar-name">😔</div>
@@ -138,30 +149,30 @@
       </article>
 
       <!-- Solution -->
-      <article class = "case-sections">
+      <article class = "case-sections" id="solution">
         <h1 class = "main-sections">The Solution</h1>
         <h3 class = "main-points">Built upon <span style="color:#F67FB9;">four</span> pillars that address the user's concerns directly</h3>
-        <img src="images/skylake-black.png" class = "proj-img">
+        <img src="images/skylake-grey.png" class = "proj-img">
         <div class="grid2x2">
-          <div class="box" data-aos="zoom-in-up" data-aos-duration="1000">
+          <div class="box-pink" data-aos="zoom-in-up" data-aos-duration="1200">
             <span class="feature-box">
               <h3 class="feature">Simple<br>Layout</h3>
               <p class="feature-text">2 column view with navbar, large profile photos and buttons </p>
             </span>
           </div>
-          <div class="box" data-aos="zoom-in-up" data-aos-duration="1200">
+          <div class="box-pink" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="100">
             <span class="feature-box">
               <h3 class="feature">Easy<br>Navigation</h3>
               <p class="feature-text">One-click jump via link or button from any page</p>
             </span>
           </div>
-          <div class="box" data-aos="zoom-in-up" data-aos-duration="1400">
+          <div class="box-pink" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="200">
             <span class="feature-box">
               <h3 class="feature">Efficient<br>Architecture</h3>
               <p class="feature-text">Group like-objects, essential features brought to surface</p>
             </span>
           </div>
-          <div class="box"  data-aos="zoom-in-up" data-aos-duration="1600">
+          <div class="box-pink"  data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="300">
             <span class="feature-box">
               <h3 class="feature">Social<br>Enabled</h3>
               <p class="feature-text">Collaborate via share, social feed, and live editing</p>
@@ -171,113 +182,209 @@
       </article>
 
       <!-- Design Process -->
-      <article class = "case-sections">
+      <article class = "case-sections grey" id ="r&d">
         <h1 class = "main-sections">The Design Process</h1>
         <!-- Research and discovery -->
-        <h3 class = "process-steps"><span class = "yellow">1.</span> Research and Discovery</h3>
+        <h3 class = "process-steps">Research & Discovery</h3>
         <p>I surveyed 17 individuals to identify user priorities, frustrations, preferences, and common practices. I use pain points and success factors to scope target audience, product direction, and brand identity.</p>
-        <div class = "grid-2x1">
-          <span>
+
+        <div class="grid2x1">
+          <div class="box">
             <h4 class = "chart-title">Pain Points</h4>
             <div class="chart-container">
-              <div class="chart">
-                <div class="bar" data-aos="fade-up" data-aos-duration="1000">
+              <div class="chart pain">
+                <div class="bar research" data-aos="fade-up" data-aos-duration="1200">
                     <div class="bar-percent">32%</div>
-                    <div class="bar-problem">Tedious<br>Navigation</div>
+                    <div class="bar-text">Tedious<br>Navigation</div>
                 </div>
-                <div class="bar" data-aos="fade-up" data-aos-duration="1200">
+                <div class="bar research" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                     <div class="bar-percent">25%</div>
-                    <div class="bar-problem">Ambiguous<br>Features</div>
+                    <div class="bar-text">Ambiguous<br>Features</div>
                 </div>
-                <div class="bar" data-aos="fade-up" data-aos-duration="1400">
+                <div class="bar research" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                     <div class="bar-percent">25%</div>
-                    <div class="bar-problem">Too Many<br>Features</div>
+                    <div class="bar-text">Too Many<br>Features</div>
                 </div>
-                <div class="bar" data-aos="fade-up" data-aos-duration="1600">
-                    <div class="bar-percent">19%</div>
-                    <div class="bar-problem">Cluttered<br>Workspace</div>
-                </div>
-              </div> <!-- chart -->
-            </div><!-- container -->
 
+                <div class="bar research" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                    <div class="bar-percent">19%</div>
+                    <div class="bar-text">Cluttered<br>Workspace</div>
+                </div>
+              </div>
+            </div>
             <p>Dashboards resemble aircraft cockpits with multitudes of ambiguous features cluttering the workspace. Information overload is something the user must constantly deal with.</p>
-          </span>
-          <span>
+          </div>
+
+          <div class="box">
             <h4 class = "chart-title">Success Factors</h4>
             <div class="chart-container">
-              <div class="chart success">
-                <div class="bar green" data-aos="fade-up" data-aos-duration="1000">
+              <div class="chart">
+                <div class="bar green research" data-aos="fade-up" data-aos-duration="1000">
                     <div class="bar-percent">65%</div>
-                    <div class="bar-problem">Simple<br>Layout</div>
+                    <div class="bar-text">Simple<br>Layout</div>
                 </div>
-                <div class="bar green" data-aos="fade-up" data-aos-duration="1200">
+                <div class="bar green research" data-aos="fade-up" data-aos-duration="1200">
                     <div class="bar-percent">59%</div>
-                    <div class="bar-problem">Sharing<br>Features</div>
+                    <div class="bar-text">Sharing<br>Features</div>
                 </div>
-                <div class="bar green" data-aos="fade-up" data-aos-duration="1400">
+                <div class="bar green research" data-aos="fade-up" data-aos-duration="1400">
                     <div class="bar-percent">41%</div>
-                    <div class="bar-problem">Live<br>Editing</div>
+                    <div class="bar-text">Live<br>Editing</div>
                 </div>
-                <div class="bar green" data-aos="fade-up" data-aos-duration="1600">
+                <div class="bar green research" data-aos="fade-up" data-aos-duration="1600">
                     <div class="bar-percent">24%</div>
-                    <div class="bar-problem">Quick<br>Navigation</div>
+                    <div class="bar-text">Quick<br>Navigation</div>
                 </div>
               </div> <!-- chart -->
-            </div><!-- container -->
+            </div>
             <p>Simplicity speaks as the favored trait whether it’s with the decision flow, architecture, wording, icons, functionality, or features. Users want an easy and shared experience.</p>
-          </span>
-
+          </div>
         </div>
       </article>
 
       <!-- Competitive analysis -->
-      <article class = "case-sections">
-        <h3 class = "process-steps"><span class = "yellow">2.</span> Competitive Analysis</h3>
-        <p>I conducted a user survey which revealed two main competitors - Google Drive (94% of users) and Dropbox (41% of users).</p>
-        <h4 class = "chart-title">Top Players</h4>
-        <div class="chart-container no-emoji">
+      <article class = "case-sections" id ="ca">
+        <h3 class = "process-steps">Competitive Analysis</h3>
+        <p>Survey results also reveal two top competitors in the cloud market - Google Drive and Dropbox.</p>
+        <h4 class = "chart-title thousand">Top Players</h4>
+        <div class="chart-container">
           <div class="chart competition">
             <div class="bar google" data-aos="fade-up" data-aos-duration="1000">
                 <div class="bar-percent">94%</div>
-                <div class="bar-problem">Google Drive</div>
+                <div><img src="images/competitors/Google-Drive-Logo.svg" class="competitor"></div>
             </div>
+
             <div class="bar competition dropbox"  data-aos="fade-up" data-aos-duration="1500">
                 <div class="bar-percent">41%</div>
-                <div class="bar-problem">Dropbox</div>
+                <div><img src="images/competitors/Dropbox.svg" class="competitor"></div>
+
             </div>
+
           </div> <!-- chart -->
         </div><!-- container -->
-        <p>They’re doing something right, but a closer look reveals some poor UI decisions that frustrate users.</p>
 
-        <!-- Flickity HTML init -->
-        <div class="carousel-container" data-aos="fade-left" data-aos-duration="1200">
-          <p class="carousel-title" data-aos="fade-up" data-aos-duration="1000">&nbsp;</p>
-          <div class="carousel js-flickity">
-            <img src="images/ui-problems/button-prox.png" title="Awkward Button Proximity" alt="Users have to constantly look across the screen to find file-related actions." />
-            <img src="images/ui-problems/feature-bloat.png" title="Feature Bloat" alt="What are all these features? What do they do? Is more really better?" />
-            <img src="images/ui-problems/nested-arch.png" title="Unnecessary Nesting" alt="Users have to click “settings” after clicking the settings icon to get to settings." />
-            <img src="images/ui-problems/unclear-feat.png" title="Ambiguous Features" alt="2x2 vs 3x3 grid icon - What’s the difference? What does the eye icon reveal? What is “Paper?”" />
+        <h4 class = "chart-title thousand">Questionable UI</h4>
+        <p>These competitors have their strengths, but a closer look reveals some poor UI decisions that frustrate users.</p>
+        <div class= "ui-problem-container">
+          <div class = "ui-problems">
+            <img src="images/ui-problems/button-prox.png" class = "ui-img">
+            <div class = "ui-text"><h3>Awkward Button Proximity</h3><p>Users have to constantly look across the screen to find file-related actions.</p></div>
           </div>
-          <p class="caption yellow">&nbsp;</p>
+
+          <div class = "ui-problems">
+            <img src="images/ui-problems/feature-bloat.png" class = "ui-img">
+            <div class = "ui-text"><h3>Feature Bloat</h3><p>What are all these features? What do they do? Is more really better?</p></div>
+          </div>
+
+          <div class = "ui-problems">
+            <img src="images/ui-problems/nested-arch.png" class = "ui-img">
+            <div class = "ui-text"><h3>Unnecessary Nesting</h3><p>Users have to click “settings” after clicking the settings icon to get to settings.</p></div>
+          </div>
+
+          <div class = "ui-problems">
+            <img src="images/ui-problems/unclear-feat.png" class = "ui-img">
+            <div class = "ui-text"><h3>Ambiguous Features</h3><p>2x2 vs 3x3 grid icon - What’s the difference? What does the eye icon reveal? What is “Paper?”</p></div>
+          </div>
         </div>
 
-        <p>The competition definitely lacks no features but you have to constantly work to find where they are and what they mean. Is this the experience we want for our users? Or more importantly, <span style="color:#FFC823; font-weight: 600;"><em>who</em></span> are our users?</p>
+        <p>The competition definitely lacks no features but you have to constantly work to find where they are and what they mean. Is this the experience we want for our users? Or more importantly, <span style="color:#ff5858; font-weight: 600;"><em>who</em></span> are our users?</p>
       </article>
 
       <!-- User personas-->
-      <article class = "case-sections">
-        <h3 class = "process-steps"><span class = "yellow">3.</span> User Personas</h3>
+      <article class = "case-sections grey" id ="pe">
+        <h3 class = "process-steps">User Personas</h3>
         <p>Having understood the market, I visualized the potential consumers with user personas to give context to real world scenarios.</p>
 
-        <div class="carousel-container" data-aos="fade-left" data-aos-duration="1200">
-          <p class="carousel-title" data-aos="fade-up" data-aos-duration="1000">&nbsp;</p>
-          <div class="carousel js-flickity">
-            <img src="images/personas/lauren.png" title="Meet Lauren" alt="Lauren is a designer who needs a simple and quick interface to bounce ideas to her team and manager. " />
-            <img src="images/personas/jacob.png" title="Meet Jacob" alt="Jacob is a busy engineering student who needs to store and organize assignments for access from any device." />
-            <img src="images/personas/mark.png" title="Meet Mark" alt="Mark is a technical product manager who uses cloud to manage versions across multiple project materials." />
-          </div>
-          <p class="caption yellow">&nbsp;</p>
-        </div>
+
+        <table class="personas">
+          <tr class="center">
+            <td><img src="images/personas/jacob.png"></td>
+            <td><img src="images/personas/lauren.png"></td>
+            <td><img src="images/personas/mark.png"></td>
+          </tr>
+          <tr class="center">
+            <td><h1>Jacob</h1></td>
+            <td><h1>Lauren</h1></td>
+            <td><h1>Mark</h1></td>
+          </tr>
+          <tr class="center">
+            <td>21, Los Angeles<br>Engineering Student<br>University Research</td>
+            <td>28, San Francisco<br>UX Designer<br>Mobile Design</td>
+            <td>43, Chicago<br>Product Manager<br>Healthcare Startup</td>
+          </tr>
+
+          <tr>
+            <th colspan="3">Bio</th>
+          </tr>
+          <tr>
+            <td>Jacob is an engineering student who works part time as a researcher for his aerodynamics professor and studies aerodynamic flow with a wind tunnel. He likes to skateboard and even CNC milled his own parts.</td>
+            <td>Lauren is the lead designer in her design team. She functions in an agile environment and needs to quickly draft, test, present, and repeat to create seamless experiences for her users.</td>
+            <td>Mark is the technical lead who guides and directs development in a mobile healthcare startup. He works from home occasionally and uses Slack, text, and email to communicate with his team.</td>
+          </tr>
+
+          <tr>
+            <th colspan="3">Motivations</th>
+          </tr>
+          <tr>
+            <td>Jacob's work needs to follow him from his home to the lab. He uses cloud to store and share group projects, data sets, and assignments. He just wants a simple and effective app to reduce the managerial stress so he can focus on his work.</td>
+            <td>Lauren uses cloud to store, share, and backup all her sketches, graphics, slides, and notes. She constantly bounces between different ideas and iterations so she needs cloud to centralize her work for her and her team.</td>
+            <td>Mark drafts his thoughts into docs and stores his notes for future reference. His work follows him whether he's in Colorado for a client meeting, interacting with offsite teams, or working remote in his PJs when his kids catch the flu.</td>
+          </tr>
+
+          <tr>
+            <th colspan="3">Goals</th>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <!--<li>Store, share, and organize files quickly and easily between professors and colleagues.</li>-->
+                <li>Transfer files across a multitude of devices for global access.</li>
+                <li>Manage a version history of his work to go back if needed.</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Quickly navigate and share files for each iteration of the design process.</li>
+                <!--<li>Edit live during group sessions and keep a change history.</li>-->
+                <li>Centralize the team's work for easy collaboration with colleagues and clients.</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Integrate comments into his files and share with dedicated functional groups.</li>
+                <!--<li>Organize his work for his team and clients with a single repository.</li>-->
+                <li>Dedicate social spaces for conversation across files and teams.</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <th colspan="3">Frustrations</th>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Functional bloat and noise leaving him with too many choices to pick from.</li>
+                <li>Constantly forgetting who he shared files with and who changed what.</li>
+                <!--<li>Losing track of updates due to lack of file history system.</li>-->
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Nonsensical icons, ambiguous features, unnecessary options grabbing attention.</li>
+                <li>Distracting elements that pull away from her tasks rather than enabling and expediting.</li>
+                <!--<li>Busy screens loaded with too many links and buttons.</li>-->
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Losing track of file location, versions, and sharing rights.</li>
+                <li>Not having an integrated social medium within his cloud.</li>
+                <!--<li>Having unclear features that add to the learning curve for his team.</li>-->
+              </ul>
+            </td>
+          </tr>
+        </table>
 
 
 
@@ -285,8 +392,8 @@
       </article>
 
       <!-- User Stories -->
-      <article class = "case-sections">
-        <h3 class = "process-steps"><span class = "yellow">4.</span> User Stories</h3>
+      <article class = "case-sections" id ="st">
+        <h3 class = "process-steps">User Stories</h3>
         <p>With our personas in mind, I created a list of common use cases in the form of user stories. Every story tells of a mini journey but not all stories are born equal. Thus, I categorize task by priority and user type.</p>
 
         <table class="mobile">
@@ -311,7 +418,7 @@
         </table>
 
 
-        <table class="desktop"> <!--hide this on mobile-->
+        <table class="desktop" align="center"> <!--hide this on mobile-->
           <tr>
             <th class="high">High</th>
             <th class="med">Medium</th>
@@ -326,164 +433,289 @@
 
         <p>Priority dictates hierarchy, architecture, flow, and visual design. A minimum viable product is the initial goal so users first get what they need, then add nice-to-haves in succession. </p>
         <form>
-          <input class = "click-button casestudy" type="button" value="All User Stories" onclick="window.location.href='https://docs.google.com/spreadsheets/d/1OTXRAFy8CwqmEOOVUlcZTgW7FCSZhRZW3q1GAFnS6mw/edit?usp=sharing'"/>
+          <input class = "click-button casestudy" type="button" value="All User Stories" onclick="window.open('https://docs.google.com/spreadsheets/d/1OTXRAFy8CwqmEOOVUlcZTgW7FCSZhRZW3q1GAFnS6mw/edit?usp=sharing')"/>
         </form>
       </article>
 
       <!-- User Flows -->
-      <article class = "case-sections">
-        <h3 class = "process-steps"><span class = "yellow">5.</span> User Flows</h3>
+      <article class = "case-sections grey" id ="fl">
+        <h3 class = "process-steps">User Flows</h3>
         <p>The app is one big system made of little systems that talk to each other. Drafting the logical flow between action and result is the first step to architecting an effective experience.</p>
 
-        <div class="carousel-container"  data-aos="fade-left" data-aos-duration="1200">
-          <p class="carousel-title" data-aos="fade-up" data-aos-duration="1000">&nbsp;</p>
-          <div class="carousel js-flickity" data-flickity='{ "adaptiveHeight": true }'>
-            <img src="images/user-flows/new-content.png" title="New Content" alt="Three different branches of content creation can be managed with a single click." />
-            <img src="images/user-flows/social.png" class="flows" title="Social Feed" alt="Social features are accessible all within a dedicated and diverse feed." />
-            <img src="images/user-flows/share.png" class="flows" title="Sharing" alt="Sharing is accessible from any page and customizable for user rights." />
-            <img src="images/user-flows/comment.png" class="flows" title="Commenting" alt="Comments can be added a number of ways. Just pick your favorite." />
-          </div>
-          <p class="caption yellow">&nbsp;</p>
+        <img src="images/user-flows/flow.png" class="flow-img">
+        <h3>New Content - Three different branches of content creation can be managed with a single click.</h3>
 
-        </div>
+
         <p>Bare bones flow diagrams quickly reveal key decision points and unnecessary steps. Simplicity, accessibility, and efficiency are the goals. This means reducing steps, cross-referencing nodes, and grouping by common denominators.<p>
         <form>
-          <input class = "click-button casestudy" type="button" value="All User Flows" onclick="window.location.href='https://docs.google.com/document/d/1MIvnijjbIHQOc1ZQ7rbswzEbw10N3FDzzJBJ1Nyahfw/edit?usp=sharing'" />
+          <input class = "click-button casestudy" type="button" value="All User Flows" onclick="window.open('https://drive.google.com/file/d/1FLWeXneIEfRP8tiIr9i1D3GALdqDOPV_/view?usp=sharing')" />
         </form>
       </article>
 
       <!-- Wireframes -->
-      <article class = "case-sections">
-        <h3 class = "process-steps"><span class = "yellow">6.</span> Wireframes</h3>
+      <article class = "case-sections" id ="lf">
+        <h3 class = "process-steps">Wireframes</h3>
+        <h4 class = "chart-title thousand">Pen & Paper</h4>
         <p>User flows are fleshed out through wireframes to get a sense of a real world product. I start on paper, go through numerous versions, annotate, and repeat until the user flows are satisfied.</p>
 
-        <div class="carousel-container" data-aos="fade-left" data-aos-duration="1200">
-          <p class="carousel-title" data-aos="fade-up" data-aos-duration="1000">&nbsp;</p>
-          <div class="carousel js-flickity">
-            <img src="images/sketches/dash.png" title="Early Sketch" alt="A first take on the dashboard with plenty of highlights and annotations for changes." />
-            <img src="images/sketches/social.png" title="Navigation" alt="Drafting how the app will flow and considering features, placement, and interactive elements." />
-            <img src="images/sketches/sign-up.png" title="Signing Up"  alt="The starting point for all users - the landing page and sign up process."/>
+        <div class = "sketch-container">
+          <div class = "sketch-row">
+            <img src="images/sketches/sketchbook1.jpg"/>
           </div>
-          <p class="caption yellow">&nbsp;</p>
+          <div class = "sketch-row">
+            <img src="images/sketches/sketchbook2.jpg"/>
+          </div>
         </div>
 
-        <p>Then, I draft Lo-Fi wireframes on Balsamiq because my handwriting is that of a young child (or a doctor… you decide). Also to stay focused on content strategy.</p>
+        <h4 class = "chart-title thousand">Balsamiq</h4>
+        <p>Next, I draft Lo-Fi wireframes on Balsamiq because my handwriting is that of a child's... and to stay focused on content strategy before moving on to Hi-Fi.</p>
 
-        <div class="carousel-container" data-aos="fade-left" data-aos-duration="1200">
-          <p class="carousel-title" data-aos="fade-up" data-aos-duration="1000">&nbsp;</p>
-          <div class="carousel js-flickity">
-            <img src="images/wireframe/newfile.png" title="Dashboard" alt="The dashboard in it's first digital form. I experimented with a large create panel for emphasis of major actions." />
-            <img src="images/wireframe/version.png" title="Version History" alt="Version management was a desired feature from user surveys. Users can jump to any node in the version tree." />
-            <img src="images/wireframe/social.png" title="Social Feed" alt="The Social feed is the hub for users to interact and engage more intimately than with a share link." />
-            <img src="images/wireframe/live.png" title="Live Editing" alt="Live edit footprints and comment threads create a socially collaborative environment." />
-            <img src="images/wireframe/details.png" title="File Details" alt="Details allow users to find key metadata relating to the file and quickly share with more users." />
+        <div class = "wireframe-container">
+          <img src="images/wireframe/mockup-iso.png"/>
+        </div>
 
+        <h4 class = "chart-title thousand">Key Features</h4>
+
+        <div class= "ui-problem-container">
+          <div class = "ui-problems">
+            <img src="images/wireframe/1.png" class = "ui-img">
+            <div class = "ui-text"><h3>Dashboard</h3><p>The create panel is enlarged to emphasize importance of content creation. </p></div>
           </div>
-          <p class="caption yellow">&nbsp;</p>
+
+          <div class = "ui-problems">
+            <img src="images/wireframe/2.png" class = "ui-img">
+            <div class = "ui-text"><h3>Social Feed</h3><p>The Social feed is the hub for users to interact and engage more intimately than with a share link.</p></div>
+          </div>
+
+          <div class = "ui-problems">
+            <img src="images/wireframe/3.png" class = "ui-img">
+            <div class = "ui-text"><h3>File Details</h3><p>A details pane grants version history and key relevant data for the users to easily manage files at a glance.</p></div>
+          </div>
+
+          <div class = "ui-problems">
+            <img src="images/wireframe/4.png" class = "ui-img">
+            <div class = "ui-text"><h3>Live Editing</h3><p>Live change footprints and comment threads create a socially collaborative and engaging environment.</p></div>
+          </div>
+
         </div>
 
         <form>
-          <input class = "click-button casestudy" type="button" value="Wireframe Prototype" onclick="window.location.href='https://invis.io/BPNOZONWCYU'"/>
+          <input class = "click-button casestudy" type="button" value="Wireframe Prototype" onclick="window.open('https://invis.io/BPNOZONWCYU')"/>
         </form>
       </article>
 
       <!-- User Testing 1 -->
-      <article class = "case-sections">
-        <h3 class = "process-steps"><span class = "yellow">7.</span> User Testing - First Round</h3>
-        <h4 class = "chart-title">What <span class = "low">Worked</span></h4>
+      <article class = "case-sections grey" id ="ut1">
+        <h3 class = "process-steps">User Testing - First Round</h3>
+        <h4 class = "chart-title thousand">What Worked</h4>
         <p>Users were able to create, organize, and share files with no issues. Navigation was quick and easy for the users.</p>
-        <h4 class ="chart-title">What <span class = "high">Didn't</span></h4>
+        <h4 class ="chart-title thousand">What Didn't</h4>
         <p>When presented with two buttons, the users naturally click the bigger or bottom-most button without reading the text. Having two buttons creates a tension between options. In the login page, some users blindly clicked the “create account” button rather than “login.”</p>
-        <img src="images/user-test-1/signup.png" class="single-img">
-        <p>In the Hi-Fi stage, the primary page action was kept as a button and revealed after fillout. The Login button reveals on password fillout to grab the users attention with only one option. The secondary action (creating an account) was changed to a link and moved away from the visual path.</p>
-        <img src="images/user-test-1/signup2.jpg" class="single-img">
-        <p>Users don’t want to have to think about every action. Little breadcrumbs can steer users to confusion or success. Laying the right path determines that success.</p>
+        <div class = "test-row">
+          <div class = "test-col">
+            <img src="images/user-test-1/signup.png" class = "test-col-img">
+          </div>
+          <div class = "test-col">
+            <img src="styles/icons/arrow.svg" class = "arrow">
+          </div>
+          <div class = "test-col">
+            <img src="images/user-test-1/signup2.png" class = "test-col-img">
+          </div>
+        </div>
+
+        <p>In the Hi-Fi stage, the primary page action was kept as a button and revealed after fillout. The Login button reveals on password fillout to grab the users attention with only one option. The secondary action (creating an account) was changed to a link and moved away from the visual path. Users don’t want to have to think about every action. Little breadcrumbs can steer users to confusion or success. Laying the right path determines that success.</p>
       </article>
 
       <!-- Hifi Mockups -->
-      <article class = "case-sections">
-        <h3 class = "process-steps"><span class = "yellow">8.</span> Hi-Fi Mockups</h3>
+      <article class = "case-sections" id ="hf">
+        <h3 class = "process-steps">Hi-Fi Mockups</h3>
+        <h4 class = "chart-title thousand">Sketch</h4>
         <p>The dash is refined in Sketch with all the visual branding elements. Icons were carefully selected and colorized to commonly accepted color schemes. Typography and color support visual cues, information hierarchy, and object selection.</p>
 
-        <div class="carousel-container" data-aos="fade-left" data-aos-duration="1200">
-          <p class="carousel-title" data-aos="fade-up" data-aos-duration="1000">&nbsp;</p>
-          <div class="carousel js-flickity">
-            <img src="images/hifi/dash.png" title="Dashboard" alt="The new and improved dash. Page icons only reveal in the left column when selected. The 'new' button was moved to the left to save space." />
-            <img src="images/hifi/live-edit.png" title="Live Editing" alt="Live footprints fade over time and quickly show users who are making edits. This personalizes the collaboration experience. " />
-            <img src="images/hifi/history.png" title="Version History" alt="Version history is shown with nodes on a timeline. A donut chart also reveals the magnitude of changes made by each user. " />
-            <img src="images/hifi/newfile.png" title="New Content" alt="The new content window opens on click and has 2 options - upload and create." />
-            <img src="images/hifi/tile.png" title="Tile View" alt="A tile view also is available for quick preview and identification. Photos and visual content are granted more context in this view. " />
+        <div class = "wireframe-container">
+          <img src="images/hifi/mockup-hifi-iso.png"/>
+        </div>
 
+        <h4 class = "chart-title thousand">Features Refined</h4>
+
+        <div class= "ui-problem-container">
+          <div class = "ui-problems">
+            <img src="images/hifi/dash.png" class = "ui-img">
+            <div class = "ui-text"><h3>Dashboard</h3><p>The "new" window opens on click and has 2 options - upload and create. Nav icons only reveal in the left column when selected.</p></div>
           </div>
-          <p class="caption yellow">&nbsp;</p>
+
+          <div class = "ui-problems">
+            <img src="images/hifi/edit.png" class = "ui-img">
+            <div class = "ui-text"><h3>Live Editing</h3><p>Live footprints fade over time and quickly show users who are making edits. This personalizes the collaboration experience.</p></div>
+          </div>
+
+          <div class = "ui-problems">
+            <img src="images/hifi/history.png" class = "ui-img">
+            <div class = "ui-text"><h3>Version Control</h3><p>Version history is shown with selectable nodes on a timeline. A donut chart also reveals the magnitude of changes made by each user.</p></div>
+          </div>
+
+          <div class = "ui-problems">
+            <img src="images/hifi/tile.png" class = "ui-img">
+            <div class = "ui-text"><h3>Tile View</h3><p>A tile view is available for quick preview and identification. This helps the user understand content directly.</p></div>
+          </div>
+
         </div>
 
 
       </article>
 
       <!-- User testing 2 -->
-      <article class = "case-sections">
-        <h3 class = "process-steps"><span class = "yellow">9.</span> User Testing - Round Two</h3>
-        <h4 class = "chart-title">What <span class = "low">Worked</span></h4>
+      <article class = "case-sections grey" id ="ut2">
+        <h3 class = "process-steps">User Testing - Round Two</h3>
+        <h4 class = "chart-title thousand">What Worked</h4>
         <p>Users were able to easily navigate, manage files, invite members to groups, find file details and version history.</p>
-        <h4 class ="chart-title">What <span class = "high">Didn't</span></h4>
+        <h4 class ="chart-title thousand">What Didn't</h4>
         <p>The Sign up process was 3 steps, which was 2 steps too many. Users just wanted to click and go, thus it was made to be.</p>
-        <img src="images/user-test-2/badsignup.png" class="single-img">
+        <!--<img src="images/user-test-2/badsignup.png" class="single-img">
         <img src="styles/icons/arrow.svg" class="goldarrow">
-        <img src="images/user-test-2/goodsignup.png" class="single-img">
+        <img src="images/user-test-2/goodsignup.png" class="single-img">-->
+
+        <div class = "test-row">
+          <div class = "test-col">
+            <img src="images/user-test-2/badsignup.png" class = "test-col-img">
+          </div>
+          <div class = "test-col">
+            <img src="styles/icons/arrow.svg" class = "arrow">
+          </div>
+          <div class = "test-col">
+            <img src="images/user-test-2/goodsignup.png" class = "test-col-img">
+          </div>
+        </div>
+
         <p>Some users were confused with the “Group” action (creating new Groups or Folders). Some users associated the “new” button with files and folders, not new groups. Another user confused the “create folder” button with the “upload folder” button.</p>
         <p><br>Thus, I removed the “Group” category and moved the “Create Group” button to the Social button in the navigation bar. I also moved the “Create New Folder” button to the “Create” category.</p>
-        <div class="img-row">
+        <!--<div class="img-row">
           <img src="images/user-test-2/new-button.png" style="width:40%">
-          <img src="styles/icons/arrow.svg" style="padding: 29% 2%">
+          <img src="styles/icons/arrow.svg" style="padding: 29% 2%" class = "arrow">
           <img src="images/user-test-2/new-new-button.png" style="width: 45%">
+        </div>-->
+
+        <div class = "test-row" style="display: flex;">
+          <div class = "test-col">
+            <img src="images/user-test-2/new-button.png" class = "test-col-img">
+          </div>
+          <div class = "test-col">
+            <img src="styles/icons/arrow.svg" class = "arrow" style = "transform: none;">
+          </div>
+          <div class = "test-col">
+            <img src="images/user-test-2/new-new-button.png" class = "test-col-img">
+          </div>
         </div>
+
         <p>Reducing three categories to two reduces the cognitive load required to navigate. I added visual aids such as coloring and icons further differentiate the options.</p>
         <p><br>In a preference test, 57% users preferred the second button layout with “...” button closer to screen center, and the star button left of the file name. The layout was changed based on proximity with relevant actions.</p>
-        <img src="images/user-test-2/filerow-old.png" class="single-img">
-        <img src="styles/icons/arrow.svg" class="goldarrow">
-        <img src="images/user-test-2/filerow-new.png" class="single-img">
+        <img src="images/user-test-2/filerow-old2.png" class="single-img">
+        <img src="styles/icons/arrow.svg" class="goldarrow arrow">
+        <img src="images/user-test-2/filerow-new2.png" class="single-img">
       </article>
 
       <!-- Brand Identity-->
-      <article class = "case-sections">
-        <h3 class = "process-steps"><span class = "yellow">10.</span> Brand Identity</h3>
-        <p>I wanted my users to feel personally connected and at peace. Mixing colorful personalities with the concept of cloud, I looked to the aurora borealis for natural inspiration. An array of green, violet, and red light particles glowing in the sky brings a sense of calming awe and wonder to everyone looking up from it’s horizon.</p>
-        <img src="images/branding/ideas.png" class="single-img">
-        <p>Brainstorming around a few concepts such as sky, light, color - elements of an aurora borealis. “Skylake” worked well phonetically and supplemented the borealis element.</p>
-        <img src="images/branding/logo-final.png" class="single-img">
+      <article class = "case-sections" id ="bi">
+        <h3 class = "process-steps">Brand Identity</h3>
+        <img src="images/branding/skylake-logo.svg" class="brand-svg"/>
+        <p>I aimed to capture colorful personalities blended into the concept of cloud. I brainstormed around concepts such as sky, light, and color until I came to the aurora borealis for natural inspiration. Glowing particles flow through the sky like a river or lake in the sky. The name “Skylake” was phonetically smooth and captured the borealis and social elements.</p>
+
+
+
+        <div class = "sketch-container">
+          <div class = "sketch-row">
+            <img src="images/branding/logosketch2.jpg"/>
+          </div>
+          <div class = "sketch-row">
+            <img src="images/branding/logosketch1.jpg"/>
+          </div>
+        </div>
+
         <p>The mountain is the origin of a single long stroke which ends openly to represent continuity or the infinite. Cloud has a sense of vastness and freedom that allows the user to connect within a single medium. I wanted to accentuate the mountain and aurora so I circled the logo and used negative space.</p>
+
       </article>
 
       <!-- Conclusions -->
-      <article class = "case-sections">
+      <article class = "case-sections grey" id ="co">
         <h1 class = "main-sections">Conclusions</h1>
-        <div class = "conclusions">
-          <img src="styles/icons/process.svg" class="conc-icon">
-          <h4 class ="conc-title">Process</h4>
-          <p>An iterative and rigorous design process encourages a robust final product. In conjunction, flexibility and balance of time and effort is the managerial counterpart to process - equally as important to success as future projects will have unpredictable constraints or schedules.</p>
-        </div>
-        <div class = "conclusions">
-          <img src="styles/icons/feedback.svg" class="conc-icon">
-          <h4 class ="conc-title">Feedback</h4>
-          <p>User Feedback is absolutely crucial. I wasn’t too sure that there was space for another cloud app but the user survey revealed real problems that needed solutions. Remaining unbiased is difficult. Thankfully, prototyping and testing reveals all the cracks in both form and function.</p>
-        </div>
-        <div class = "conclusions">
-          <img src="styles/icons/visual.svg" class="conc-icon">
-          <h4 class ="conc-title">Visual</h4>
-          <p>Visual communication is a delicate art with no one true answer. The method needs to fit into context of each situation and action. A brand needs character and meaning, not just pretty face. But it all starts with a sketch, the first-fruit of creation.</p>
-        </div>
+
+        <!--desktop-->
+        <table class="conclusions">
+          <tr class="center">
+            <td><h1>Successes</h1></td>
+            <td><h1>Learnings</h1></td>
+          </tr>
+
+          <tr>
+            <td>
+              <ul> <!--successes-->
+                <li>Reduced cognitive stress from workflow by simplifying architecture, reducing steps, and tailoring aesthetic elements to visual flow.</li>
+                <li>Quickly iterated through prototypes and testing to find problems and develop improvements.</li>
+                <li>Implemented a rigorous design process to develop a robust final product that satisfies user needs.</li>
+              </ul>
+            </td>
+            <td>
+              <ul> <!--learnings-->
+                <li>Pen & Paper, the first-fruit of creation, is where the magic happens. Creative ideation deserves much more dedicated time.</li>
+                <li>User Feedback is absolutely crucial. User surveys, prototypes, and tests reveal the necessary feedback revealing real problems to be addressed.</li>
+                <li>Focusing too much on small visual details early on can burn a lot of time especially when features have yet to be determined.</li>
+              </ul>
+            </td>
+
+          </tr>
+        </table>
+
+        <!--mobile-->
+        <table class="conclusions-mobile">
+          <tr class="center">
+            <td><h1>Successes</h1></td>
+          </tr>
+
+          <tr>
+            <td>
+              <ul> <!--successes-->
+                <li>Reduced cognitive stress from workflow by simplifying architecture, reducing steps, and tailoring aesthetic elements to visual flow.</li>
+                <li>Quickly iterated through prototypes and testing to find problems and develop improvements.</li>
+                <li>Implemented a rigorous design process to develop a robust final product that satisfies user needs.</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr class="center">
+            <td><h1>Learnings</h1></td>
+          </tr>
+
+          <tr>
+            <td>
+              <ul> <!--learnings-->
+                <li>Pen & Paper, the first-fruit of creation, is where the magic happens. Creative ideation deserves much more dedicated time.</li>
+                <li>User Feedback is absolutely crucial. User surveys, prototypes, and tests reveal the necessary feedback revealing real problems to be addressed.</li>
+                <li>Focusing too much on small visual details early on can burn a lot of time especially when features have yet to be determined.</li>
+              </ul>
+            </td>
+          </tr>
+
+
+        </table>
+
+
+
+
+
       </article>
 
     </section>
 
-  </div>
+    <div class='scrolltop'>
+      <div class='scroll vert-move'><i class="fa fa-4x fa-angle-up" style = "color: #4c4744;"></i></div>
+    </div>
+
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/problemchart.js"></script>
-    <script src="js/flickity.pkgd.js"></script>
-    <script src="js/carousel-caption.js"></script>
-    <script src="js/scrolltop.js"></script>
+    <script src="js/nav-hide.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/scrolltotop.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
@@ -501,10 +733,8 @@
   </body>
 
   <footer>
-    <div class='scroll'>
-      <img src="styles/icons/scrolltotop.svg" class="scrolltop-icon vert-move">
-    </div>
-    <img src="images/fred-logo.svg" class="fred-logo">
+
+    <img src="images/logo.svg" class="fred-logo">
     <br>
     <span>Questions, comments, coffee?</span>
     <br>
