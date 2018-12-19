@@ -32,6 +32,11 @@
   font-style: normal;
 }
 
+
+/*body {
+  overscroll-behavior-y: none;
+}*/
+
 .competitor {
     margin-top: -1.2em;
     width: 150px;
