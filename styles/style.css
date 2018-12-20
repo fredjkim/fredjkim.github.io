@@ -32,11 +32,6 @@
   font-style: normal;
 }
 
-
-/*body {
-  overscroll-behavior-y: none;
-}*/
-
 .competitor {
     margin-top: -1.2em;
     width: 150px;
@@ -282,7 +277,7 @@ table.conclusions-mobile li {
 body {
   background-color: #fff8e8;
   margin: 0;
-  -webkit-overflow-scrolling: touch;
+  /*-webkit-overflow-scrolling: touch;*/
 }
 
 
