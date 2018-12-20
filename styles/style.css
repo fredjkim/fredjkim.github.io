@@ -32,6 +32,10 @@
   font-style: normal;
 }
 
+.contact {
+  padding: 0;
+}
+
 .competitor {
     margin-top: -1.2em;
     width: 150px;
@@ -871,7 +875,7 @@ th.case-table {
     background: #fff;
     padding: 1em;
     transition: all 0.3s ease-in-out;
-    width: 100%;
+    width: calc(100% - 2em - 2px);
     margin: 0.5em 0 1em 0;
 }
 
@@ -1323,8 +1327,8 @@ table.mobile {
 @media (orientation: landscape) and (max-width:1023px) {
 
   .about-photo {
-      width: auto;
-      height: 90%;
+    width: auto;
+  height: 90vh;
   }
 
   .about-profile {
