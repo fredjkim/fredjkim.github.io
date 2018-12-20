@@ -12,7 +12,7 @@ $(document).ready(function () {
       currentScrollTop = a;
 
       if (c < currentScrollTop && a > b + b) {
-        document.getElementById("navbar").style.top = "-60px";
+        document.getElementById("navbar").style.top = "-63px";
       } else if (c > currentScrollTop && !(a <= b)) {
         document.getElementById("navbar").style.top = "0px";
       }
