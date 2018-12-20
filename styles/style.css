@@ -32,6 +32,10 @@
   font-style: normal;
 }
 
+.mobile-hide {
+  display: none;
+}
+
 .contact {
   padding: 0;
 }
@@ -46,14 +50,14 @@ table.personas {
 }
 
 table.personas-mobile {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 table.personas-mobile td {
-  font-size: 1.25em;
+  font-size: 1.125em;
   vertical-align: top;
   text-align: left;
-  padding: 5px 20px;
+  padding: 5px;
   line-height: 1.4;
 }
 
@@ -76,11 +80,11 @@ td h1 {
 
 
 table.personas-mobile img {
-  width: 13vw;
+  width: 40vw;
 }
 
 table.personas-mobile ul {
-  padding-left: 0;
+  padding-left: 1em;
 }
 
 table.conclusions {
@@ -239,7 +243,7 @@ table.conclusions-mobile li {
 /*--------About Page---------*/
 .about-header {
   padding: 0 1em;
-  padding-top: 60px;
+  padding-top: 15vh;
   max-width: 1000px;
   margin: auto;
 }
@@ -337,7 +341,7 @@ body {
 
 .fred-logo {
   height: 4em;
-  padding: 3em 0 1em 0;
+  padding: 2em 0 1em 0;
 }
 
 
@@ -1327,6 +1331,14 @@ table.mobile {
 
 @media (orientation: landscape) and (max-width:1023px) {
 
+  .mobile-hide {
+    display: block;
+  }
+
+  table.personas-mobile {
+    display: none;
+  }
+
   .about-photo {
     width: auto;
   height: 90vh;
@@ -1337,6 +1349,7 @@ table.mobile {
   }
 
   .about-header {
+      padding-top: 25vh;
       max-width: 80vw;
   }
 
@@ -1457,7 +1470,8 @@ table.mobile {
   }
 
   table.personas ul {
-    padding-left: 0;
+    padding-left: 1em;
+    margin: 0;
   }
 
   .case-sections > p, .box > p {
@@ -1497,7 +1511,7 @@ table.mobile {
 
   .landing-container img {
     width: 20vw;
-    margin: 60px auto 5vh auto;
+    margin: 25vh auto 5vh auto;
 }
 
 .logo-container {
@@ -1815,6 +1829,10 @@ table.mobile {
 /* ----------------TABLET----------------- */
 
 @media (min-width: 768px) and (max-width:1024px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2){
+
+  .mobile-hide {
+    display: block;
+  }
 
 .scrolltop .scroll {
   right: 10px;
@@ -2240,6 +2258,10 @@ table.conclusions li {
 /* -----------------Tablet LANDSCAPE------------*/
 
 @media (min-width: 768px) and (max-width:1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+
+  .mobile-hide {
+    display: block;
+  }
 
   table.conclusions li {
     padding: 5px 0;
@@ -2879,6 +2901,10 @@ table.conclusions li {
 /* ----------------DESKTOP----------------- */
 
 @media (min-width: 1025px) {
+
+  .mobile-hide {
+    display: block;
+  }
 
   .about-profile {
     width: 15vw;
