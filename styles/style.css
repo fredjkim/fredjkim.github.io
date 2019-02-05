@@ -583,7 +583,7 @@ margin-right: 0.5em;
 
 .card {
   position: relative;
-  background-color: #565656;
+  background-color: #f3f2f7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -599,6 +599,14 @@ margin-right: 0.5em;
   margin-top: -5vh;
   flex-shrink: 0;
   min-height: 100%;
+}
+
+.proj-img-landing-fourth {
+  height: 47vh;
+    margin-top: -6vh;
+    margin-left: -39vw;
+    flex-shrink: 0;
+
 }
 
 .proj-img {
@@ -3161,6 +3169,16 @@ table.conclusions ul {
       /* min-height: 100%; */
   }
 
+  .proj-img-landing-fourth {
+    width: 80vw;
+height: initial;
+margin-left: 0;
+object-fit: cover;
+margin-top: 1vh;
+flex-shrink: 0;
+
+  }
+
   .card {
     width: 80vw;
     margin: auto;
@@ -3172,7 +3190,7 @@ table.conclusions ul {
     overflow: hidden;
     height: 70vh;
     border-radius: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 5em;
   }
 
   .card-bottom {
