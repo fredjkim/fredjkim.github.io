@@ -210,6 +210,7 @@ table.conclusions-mobile li {
 
 .sketch-container img {
   width: 100%;
+  border-radius: 1em;
 }
 
 .wireframe-container img {
@@ -1322,6 +1323,13 @@ table.mobile {
   background-color: #ffc0cb;
 }
 
+.box-blue {
+  margin: 1%;
+  border-radius: 10px;
+  box-shadow: 0 0.3em 0.5em rgba(0,0,0,0.2);
+  background-color: #98ddff;
+}
+
 
 .feature-box {
   font-size: 1em;
@@ -2254,6 +2262,8 @@ table.conclusions li {
     box-shadow: 0 0.3em 0.5em rgba(0,0,0,0.2);
     background-color: #ffc0cb;
   }
+
+
 
 
   .bar-percent {
@@ -3386,10 +3396,12 @@ table.conclusions ul {
   padding: 40px 0;
 }
 
+
 .wireframe-container.fourth img {
-  width: 100vw;
-  margin-left: -9vw;
-  padding: 40px 0;
+  border-radius: 1em;
+  width: 80vw;
+  margin: 40px 0;
+  padding: 0;
 }
 
 
@@ -3654,5 +3666,36 @@ table.conclusions ul {
   table.conclusions li {
     padding: 5px 0;
   }
+
+
+  .cd-fixed-bg {
+  margin: 40px 0;
+  min-width: 80vw;
+  min-height: 80vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cd-fixed-bg.cd-fixed-bg--1 {
+  background-image: url("../images/wireframe/fourth-lofi-iso.png");
+}
+
+.cd-fixed-bg.cd-fixed-bg--2 {
+  background-image: url("../img/cd-background-2.jpg");
+}
+
+.cd-fixed-bg.cd-fixed-bg--3 {
+  background-image: url("../img/cd-background-3.jpg");
+}
+
+.cd-fixed-bg.cd-fixed-bg--4 {
+  background-image: url("../img/cd-background-4.jpg");
+}
+
+.cd-scrolling-bg {
+  min-height: 100%;
+}
 
 }
