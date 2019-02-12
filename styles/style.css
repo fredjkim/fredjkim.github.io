@@ -147,6 +147,7 @@ table.conclusions-mobile li {
 
   .test-col > img {
     width: 100%;
+    border-radius: 1em;
   }
 
   .test-col >img.arrow {
@@ -3618,7 +3619,7 @@ table.conclusions ul {
 
   .chart.pain {
     height: 40vh;
-    margin-top: 2vh;
+    margin-top: -10vh;
   }
 
   .dropdown .dropbtn {
