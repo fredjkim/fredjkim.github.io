@@ -619,6 +619,7 @@ margin-right: 0.5em;
   border-radius: 1em;
   margin: 0 0.5em;
   margin-bottom: 2em;
+  box-shadow: 0 0.2em 0.5em rgba(0,0,0,0.2);
 }
 
 .proj-img-landing {
@@ -856,6 +857,7 @@ margin-right: 0.5em;
 
 .icon {
   height: 1.3em;
+  width: 1.3em;
 }
 
 .role-col {
@@ -3362,6 +3364,7 @@ table.conclusions ul {
     height: 90vh;
     border-radius: 0;
     margin-bottom: 0;
+    box-shadow: 0 0.2em 0.5em rgba(0,0,0,0.2);
   }
 
   .card-bottom {
