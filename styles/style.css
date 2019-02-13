@@ -3441,6 +3441,17 @@ table.conclusions ul {
     background: #FFC823;
     padding: .75em;
   }
+
+  .click-button:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    background: #ffd453;
+    cursor: pointer;
+
+    box-shadow: 0 0.4em 0.3em rgba(0,0,0,0.3);
+  }
+
   .carousel img.flows {
     width: 30%;
   }
