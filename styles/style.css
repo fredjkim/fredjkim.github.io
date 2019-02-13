@@ -340,16 +340,6 @@ body {
   -webkit-transition: 0.3s ease-in-out; /*safari and chrome */
 }
 
-.click-button:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  background: #ffd453;
-  cursor: pointer;
-
-  box-shadow: 0 0.4em 0.3em rgba(0,0,0,0.3);
-}
-
 .click-button:active {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -484,9 +474,9 @@ margin-right: 0.5em;
 /* Add a dark background on topnav links and the dropdown button on hover */
 .dropdown:hover .dropbtn {
   -webkit-transition: 0.2s ease-in-out; /*safari and chrome */
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
   color: #ff5858;
   background: #ffd453;
   cursor: pointer;
@@ -3443,13 +3433,22 @@ table.conclusions ul {
   }
 
   .click-button:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
     background: #ffd453;
     cursor: pointer;
 
     box-shadow: 0 0.4em 0.3em rgba(0,0,0,0.3);
+  }
+
+  .click-button:active {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    background: #ffdc8c;
+    box-shadow: 0 .2em .1em rgba(0,0,0,0.4);
+    -webkit-transition: 0.1s ease-in-out; /*safari and chrome */
   }
 
   .carousel img.flows {
