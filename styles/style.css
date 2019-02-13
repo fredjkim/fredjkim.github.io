@@ -315,6 +315,7 @@ table.conclusions-mobile li {
 body {
   background-color: #fff8e8;
   margin: 0;
+
   /*-webkit-overflow-scrolling: touch;*/
 }
 
@@ -641,7 +642,13 @@ margin-right: 0.5em;
     margin-top: -6vh;
     margin-left: -39vw;
     flex-shrink: 0;
+}
 
+.proj-img-landing-branding {
+  height: 61vh;
+  margin-top: -6vh;
+  margin-left: 45vw;
+  flex-shrink: 0;
 }
 
 .proj-img {
@@ -1406,6 +1413,13 @@ table.mobile {
     flex-shrink: 0;
   }
 
+  .proj-img-landing-branding {
+    height: 105vh;
+margin-top: 0;
+margin-left: -10vw;
+flex-shrink: 0;
+  }
+
   .mobile-hide {
     display: block;
   }
@@ -1933,6 +1947,13 @@ table.mobile {
     flex-shrink: 0;
   }
 
+  .proj-img-landing-branding {
+    height: 47vh;
+    margin-top: 0;
+    margin-left: -7vw;
+    flex-shrink: 0;
+  }
+
   .mobile-hide {
     display: block;
   }
@@ -2364,6 +2385,13 @@ table.conclusions li {
 /* -----------------Tablet LANDSCAPE------------*/
 
 @media (min-width: 768px) and (max-width:1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+
+  .proj-img-landing-branding {
+    height: 77vh;
+        margin-top: 0vh;
+        margin-left: -5vw;
+        flex-shrink: 0;
+  }
 
 .proj-img-landing-fourth {
   height: 70vh;
@@ -3320,6 +3348,17 @@ table.conclusions ul {
         flex-shrink: 0;
   }
 
+  .proj-img-landing-branding {
+        width: 100vw;
+        height: 90vh;
+        margin-left: 0;
+        object-fit: cover;
+        margin-top: 2vh;
+        flex-shrink: 0;
+  }
+
+
+
   .card {
     width: 100%;
     margin: auto;
@@ -3331,7 +3370,7 @@ table.conclusions ul {
     overflow: hidden;
     height: 90vh;
     border-radius: 0;
-    margin-bottom: 2em;
+    margin-bottom: 0;
   }
 
   .card-bottom {
