@@ -9,7 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="fancybox-master/dist/jquery.fancybox.css">
+
 
   </head>
 
@@ -35,26 +37,28 @@
       </section>
 
 
-      <div class="logochallenge-container">
-        <div class="logo-grid">
-          <div class="logo-cell">
-            <img src="images/logo-challenge/bull.png" class="responsive-image">
-          </div>
-          <div class="logo-cell">
-            <img src="images/logo-challenge/quasar.png" class="responsive-image">
-          </div>
-          <div class="logo-cell">
-            <img src="images/logo-challenge/letter.png" class="responsive-image">
-          </div>
-          <div class="logo-cell">
-            <img src="images/logo-challenge/ydlogo.png" class="responsive-image">
-          </div>
-          <div class="logo-cell">
-            <img src="images/logo-challenge/fourthwave.png" class="responsive-image">
-          </div>
-          <div class="logo-cell">
-            <img src="images/logo-challenge/skylake.png" class="responsive-image">
-          </div>
+      <div class="gallery-container logo-gallery">
+        <div class="gallery-grid">
+          <a href="images/logo-challenge/bull.png" data-fancybox="images">
+            <img src="images/logo-challenge/bull.png" />
+          </a>
+          <a href="images/logo-challenge/quasar.png" data-fancybox="images">
+            <img src="images/logo-challenge/quasar.png" />
+          </a>
+          <a href="images/logo-challenge/letter.png" data-fancybox="images">
+            <img src="images/logo-challenge/letter.png" />
+          </a>
+
+          <a href="images/logo-challenge/ydlogo.png" data-fancybox="images">
+            <img src="images/logo-challenge/ydlogo.png" />
+          </a>
+          <a href="images/logo-challenge/fourthwave.png" data-fancybox="images">
+            <img src="images/logo-challenge/fourthwave.png" />
+          </a>
+          <a href="images/logo-challenge/skylake.png" data-fancybox="images">
+            <img src="images/logo-challenge/skylake.png" />
+          </a>
+
         </div>
       </div>
 
@@ -63,21 +67,11 @@
 
 
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="fancybox-master/dist/jquery.fancybox.js"></script>
+
     <script src="js/nav-hide.js"></script>
     <script src="js/anchor.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130500098-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-130500098-1');
-    </script>
   </body>
 
 
