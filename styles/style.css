@@ -60,6 +60,13 @@
   border-radius: 1em;
 }
 
+.photo-cell img {
+  height: calc(calc(100vw/3) - 2px);
+  width: calc(calc(100vw/3) - 2px);
+  object-fit: cover;
+  margin: 1px;
+}
+
 .mobile-hide {
   display: none;
 }
@@ -3045,6 +3052,7 @@ flex-shrink: 0;
   }
 
   .logo-grid {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -3069,6 +3077,13 @@ flex-shrink: 0;
       background: #fffcf6;
       cursor: pointer;
       box-shadow: 0 0.4em 0.3em rgba(0,0,0,0.3);
+    }
+
+    .photo-cell img {
+      height: calc(calc(80vw/3) - 1em);
+      width: calc(calc(80vw/3) - 1em);
+      object-fit: cover;
+      margin: .5em;
     }
 
   .mobile-hide {
@@ -3349,6 +3364,17 @@ table.conclusions ul {
         margin-top: 2vh;
         flex-shrink: 0;
   }
+
+    .proj-img-landing-photography {
+          width: ;
+          height: 70vh;
+          margin-left: -30vw;
+          object-fit: cover;
+          margin-top: 0;
+          flex-shrink: 0;
+          box-shadow: 1em 0.5em 1em rgba(0,0,0,0.2);
+
+    }
 
 
 

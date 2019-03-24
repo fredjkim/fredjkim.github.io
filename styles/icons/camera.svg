@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="310px" height="240px" viewBox="0 0 310 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>noun_Camera_2332773</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="noun_Camera_2332773" fill="#817872" fill-rule="nonzero">
+            <g id="Group">
+                <path d="M155,58 C196,58 230,91 230,132 C230,174 196,207 155,207 C114,207 80,174 80,132 C80,91 114,58 155,58 Z M155,74 C123,74 97,100 97,132 C97,164 123,190 155,190 C187,190 213,164 213,132 C213,100 187,74 155,74 Z" id="Shape"></path>
+                <path d="M27,25 L87,25 L95,12 C100,4 108,0 117,0 L194,0 C203,0 210,4 215,12 L223,25 L283,25 C298,25 310,37 310,52 L310,213 C310,228 298,240 283,240 L27,240 C12,240 0,228 0,213 L0,52 C0,37 12,25 27,25 Z M92,41 L27,41 C22,41 17,46 17,52 L17,213 C17,218 22,223 27,223 L283,223 C289,223 293,218 293,213 L293,52 C293,46 289,41 283,41 L219,41 C215,41 213,40 211,37 L201,21 C199,18 197,17 194,17 L117,17 C113,17 111,18 109,21 L99,37 C97,40 95,41 92,41 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
