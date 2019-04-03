@@ -76,9 +76,7 @@
   }
 
   .proj-img-landing-music {
-    width: auto;
-        height: 83vh;
-        /* margin-bottom: -3vh; */
+    width: 200vw;
         margin-right: 0;
         object-fit: cover;
         margin-top: 3vh;
