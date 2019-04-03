@@ -33,6 +33,7 @@
 }
 
 
+
   .gallery-container {
     margin: 0 auto;
     padding: 0;
@@ -76,12 +77,12 @@
 
   .proj-img-landing-music {
     width: auto;
-    height: 80vh;
-    margin-bottom: 10vh;
-    margin-right: 0;
-    object-fit: cover;
-    margin-top: 0;
-    flex-shrink: 0;
+        height: 83vh;
+        /* margin-bottom: -3vh; */
+        margin-right: 0;
+        object-fit: cover;
+        margin-top: 3vh;
+        flex-shrink: 0;
   }
 
 
@@ -3372,12 +3373,12 @@ table.conclusions ul {
   }
 
   .proj-img-landing-music {
-    width: 125vw;
+    width: 120vw;
     height: auto;
-    margin-right: 25vw;
+    margin-right: 20vw;
     margin-bottom: 0;
+    margin-top: 25vh;
     object-fit: cover;
-    margin-top: 0;
     flex-shrink: 0;
   }
 
