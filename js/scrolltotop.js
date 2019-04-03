@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 4000 ) {
+    if ($(this).scrollTop() > 3000 ) {
         $('.scrolltop:hidden').stop(true, true).fadeIn();
     } else {
         $('.scrolltop').stop(true, true).fadeOut();

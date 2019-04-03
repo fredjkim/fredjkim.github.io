@@ -74,6 +74,19 @@
         box-shadow: 1em 0.5em 1em rgba(0,0,0,0.2);
   }
 
+  .proj-img-landing-music {
+    width: auto;
+    height: 80vh;
+    margin-bottom: 10vh;
+    margin-right: 0;
+    object-fit: cover;
+    margin-top: 0;
+    flex-shrink: 0;
+  }
+
+
+
+
 .mobile-hide {
   display: none;
 }
@@ -3358,6 +3371,16 @@ table.conclusions ul {
         flex-shrink: 0;
   }
 
+  .proj-img-landing-music {
+    width: 125vw;
+    height: auto;
+    margin-right: 25vw;
+    margin-bottom: 0;
+    object-fit: cover;
+    margin-top: 0;
+    flex-shrink: 0;
+  }
+
   .proj-img-landing-branding {
         width: 100vw;
         height: 90vh;
@@ -3370,7 +3393,7 @@ table.conclusions ul {
     .proj-img-landing-photography {
           width: ;
           height: 70vh;
-          margin-left: -30vw;
+          margin-right: -25vw;
           object-fit: cover;
           margin-top: 0;
           flex-shrink: 0;

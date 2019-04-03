@@ -26,7 +26,7 @@
           </div>
       </nav>
 
-      <article class = "landing-container">
+      <article class = "landing-container thetop">
         <img src="images/logo3.svg">
           <h1 data-aos="fade-up" data-aos-duration="1300">I'm <span class="yellow">Fred Kim</span>, a UX designer based in San Francisco. I create friendly, aesthetic, & data-driven products that build trust between businesses and users.</h1>
       </article>
@@ -190,13 +190,66 @@
         </article>
       </div>
 
+
+
+      <!-- Music -->
+      <div class = "proj-container">
+          <article class = "card" style="background: #f3f2f7;">
+            <div>
+              <img src ="images/music/wavy.jpg" class="proj-img-landing-music" target="_blank" onclick="window.open('https://invis.io/D6QAARHZ7K2')" />
+            </div>
+            <div class = "name-desc" style="left: auto; right:0;">
+              <h2 class= "proj-title" data-aos="fade-up" data-aos-duration="1300">Music</h2>
+              <h3 class = "proj-desc" data-aos="fade-up" data-aos-duration="1400">I capture my dreams into audio and visuals.</h3>
+              <div class = "deskonly">
+                <ul class = "ul-deskonly">
+                  <li data-aos="fade-up" data-aos-duration="1500"><img src="styles/icons/headphones.svg" class = "icon">Producer</li>
+                  <li data-aos="fade-up" data-aos-duration="1500"><img src="styles/icons/music.svg" class = "icon">Composer</li>
+                  <li data-aos="fade-up" data-aos-duration="1500"><img src="styles/icons/ae.svg" class = "icon">Editor</li>
+                </ul>
+                <form>
+                  <div data-aos="fade-up" data-aos-duration="1600">
+                  <!--<input class = "click-button" type="button" value="See Case Study" onclick="window.location.href='fourthwave.html'" />-->
+                    <input class="click-button" type="button" value="Hear Music" target="_blank" onclick="window.open('https://www.youtube.com/embed/OHwlPwsnOls?autoplay=1')">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class = "card-bottom" data-aos="fade-up" data-aos-duration="1300">
+              <div class= "role-study">
+                <section class="row">
+                  <div class="column" data-aos="fade-up" data-aos-duration="1300">
+                    <img src="styles/icons/headphones.svg" class = "icon">
+                    <p class = "role-col">Producer</p>
+                  </div>
+                  <div class="column center-col" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
+                    <img src="styles/icons/music.svg" class = "icon">
+                    <p class = "role-col">Composer</p>
+                  </div>
+                  <div class="column" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
+                    <img src="styles/icons/ae.svg" class = "icon">
+                    <p class = "role-col">Editor</p>
+                  </div>
+                </section>
+              </div>
+              <form>
+                <div data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
+                <input class="click-button" type="button" value="See Prototype" target="_blank" onclick="window.open('https://invis.io/D6QAARHZ7K2')">
+                <!--<input class = "click-button" type="button" value="See Case Study" onclick="window.location.href='fourthwave.html'" />-->
+                </div>
+              </form>
+            </div>
+
+        </article>
+      </div>
+
       <!-- Photography-->
       <div class = "proj-container">
           <article class = "card" style="background: #727067;">
             <div>
               <img src ="images/photography/james.jpg" class="proj-img-landing-photography" onclick="window.location.href='photography.html'" />
             </div>
-            <div class = "name-desc" style="left: auto; right:0;">
+            <div class = "name-desc">
               <h2 class= "proj-title" data-aos="fade-up" data-aos-duration="1300">Photography</h2>
               <h3 class = "proj-desc" data-aos="fade-up" data-aos-duration="1400">A visual journey worth more than a thousand words.</h3>
               <div class = "deskonly">
@@ -239,6 +292,9 @@
         </article>
       </div>
 
+      <div class='scrolltop'>
+        <div class='scroll vert-move'><i class="fa fa-4x fa-angle-up" style = "color: #4c4744;"></i></div>
+      </div>
 
 
 
@@ -247,6 +303,7 @@
     <script src="js/nav-hide.js"></script>
     <script src="js/anchor.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scrolltotop.js"></script>
     <script>
       AOS.init();
     </script>
