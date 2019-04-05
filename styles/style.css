@@ -3180,7 +3180,23 @@ flex-shrink: 0;
     width: calc(calc(80vw/3) - 1em);
     object-fit: cover;
     margin: .5em;
-    -webkit-transition: 0.3s ease-in-out; /*safari and chrome */
+    -webkit-transition: 0.2s ease-in-out; /*safari and chrome */
+  }
+
+  .gallery-grid-logo {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .gallery-grid-logo img {
+    height: calc(calc(50vw/3) - 1em);
+    width: calc(calc(80vw/3) - 1em);
+    object-fit: cover;
+    padding-bottom: 5vh;
+    margin: .5em;
+    -webkit-transition: 0.2s ease-in-out; /*safari and chrome */
   }
 
   .logo-gallery img {
@@ -3194,6 +3210,13 @@ flex-shrink: 0;
     background: #fffcf6;
     cursor: pointer;
     box-shadow: 0 0.4em 0.3em rgba(0,0,0,0.3);
+  }
+
+  .gallery-grid-logo img:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    cursor: pointer;
   }
 
 
