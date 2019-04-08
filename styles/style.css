@@ -32,6 +32,23 @@
   font-style: normal;
 }
 
+.about-link {
+  color: #FF5F88;
+  font-family: sofia-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.5;
+  border-bottom: 2px solid #FF5F88;
+  -webkit-transition: 0.2s ease-in-out;
+}
+
+.about-link:hover {
+  color: #ff83a3;
+  border-bottom: 1px dotted #ff83a3;
+
+}
+
 .handle-link {
   display: inline-block;
   color: #FF5F88;
@@ -3281,7 +3298,8 @@ flex-shrink: 0;
     margin: 0;
     float: left;
     font-size: 1.2em;
-    padding: 0 .5em;
+    padding: 0;
+    margin: 0 .5em;
     color: #817872;
     -webkit-transition: 0.2s ease-in-out; /*safari and chrome */
   }
@@ -3291,13 +3309,13 @@ flex-shrink: 0;
     float: none;
   }
 
-  #navbar a:hover {
+  .right-align > a:hover {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
     color: #FF5F88;
     cursor: pointer;
-    text-decoration: underline;
+    border-bottom: 2px solid #ff83a3;
   }
 
 
