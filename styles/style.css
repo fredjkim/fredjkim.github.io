@@ -32,6 +32,18 @@
   font-style: normal;
 }
 
+.fourth-test-results {
+  max-width: 800px;
+  color: #817872;
+  font-family: sofia-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  margin: auto;
+  text-align: left;
+  line-height: 1.5;
+}
+
 .about-link {
   color: #FF5F88;
   font-family: sofia-pro, sans-serif;
@@ -674,7 +686,7 @@ margin-right: 0.5em;
 .header-container-fourthwave {
   background: #e6ebee;
   overflow: hidden;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .header-content {
@@ -3831,8 +3843,9 @@ cursor: pointer;
 
   .grid2x2.fourth {
     padding-top: 0;
-    width: 70vw;
+    width: 68vw;
     margin: auto;
+    margin-top: -5vh;
   }
 
   .grid2x2 > div {
