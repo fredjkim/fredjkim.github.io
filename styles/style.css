@@ -222,7 +222,7 @@ table.conclusions-mobile {
 }
 
 table.conclusions-mobile td {
-  font-size: 1.25em;
+  font-size: 1em;
   vertical-align: top;
   text-align: left;
   padding: 0px 20px;
@@ -975,7 +975,7 @@ td {
   width: 33%;
   padding: 0 20px;
   vertical-align: top;
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: center;
   font-family: sofia-pro, sans-serif;
   font-weight: 400;
