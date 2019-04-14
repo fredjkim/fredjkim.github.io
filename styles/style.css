@@ -32,6 +32,15 @@
   font-style: normal;
 }
 
+.chart.fourth {
+  height: 40vh;
+  margin-top: 2vh;
+}
+
+.grid2x2.fourth {
+  margin-top: 65%;
+}
+
 .fourth-test-results {
   max-width: 800px;
   color: #817872;
@@ -325,6 +334,7 @@ table.conclusions-mobile li {
 
 .flow-img {
     width: 100%;
+    padding: 40px 0;
 }
 
 .sketch-container {
@@ -425,7 +435,7 @@ body {
   font-family: RNSSanz-Extrabold, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #3a3a3a;
   border: none;
   cursor: pointer;
@@ -714,7 +724,7 @@ margin-right: 0.5em;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  height: 80vh;
+  height: 75vh;
   border-radius: 1em;
   margin: 0 0.5em;
   margin-bottom: 2em;
@@ -795,7 +805,7 @@ margin-right: 0.5em;
 
 #fourthwave-hero {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 24px;
 }
 
 
@@ -1268,14 +1278,21 @@ a.fa:hover {
   display: grid;
   grid-template-rows: repeat(100, 1fr);
   grid-column-gap: 2%;
-  height: 40vh;
   margin-top: -10vh;
   margin-left: -6%;
 }
 
-.chart.pain {
-  margin-top: -22vh;
+
+.chart.pain.sky {
+  margin-top: -20vh;
+  height: 40vh;
 }
+
+.chart.pain.fourth {
+  margin-top: -10vh;
+  height: 40vh;
+}
+
 
 .chart.competition {
   height: 20vh;
@@ -1284,8 +1301,8 @@ a.fa:hover {
 }
 
 .chart.success {
-  height: 30vh;
-  margin-top:-3vh;
+  height: 40vh;
+  margin-top:-5vh;
 }
 
 .bar {
@@ -1342,7 +1359,7 @@ a.fa:hover {
 
 .bar-text {
   font-size: 0.95em;
-  margin-top: -1.5em;
+  margin-top: -1.2em;
   color: #4c4744;
 }
 
@@ -1572,7 +1589,7 @@ flex-shrink: 0;
 
   #fourthwave-hero {
     width: 100%;
-    padding-top: 60px;
+    padding-top: 0px;
   }
 
   .goldarrow {
@@ -2034,6 +2051,20 @@ flex-shrink: 0;
 
 @media (min-width: 768px) and (max-width:1024px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2){
 
+
+  .click-button {
+    font-size: 1.2em;
+  }
+
+  .chart.fourth {
+    height: 30vh;
+    margin-top: 2vh;
+  }
+
+  .grid2x2.fourth {
+      margin-top: 60%;
+  }
+
   .brush-wrapper {
     position: absolute;
     z-index: -1;
@@ -2148,7 +2179,7 @@ flex-shrink: 0;
     }
 
     table.personas img {
-      width: 25vw;
+      width: 15vw;
     }
 
     table.personas ul {
@@ -2171,7 +2202,7 @@ table.conclusions {
 }
 
 table.conclusions td {
-    font-size: 1.25em;
+    font-size: 1em;
     vertical-align: top;
     text-align: left;
     padding: 5px 20px;
@@ -2268,7 +2299,7 @@ table.conclusions li {
   }
 
   .card {
-    width: 90vw;
+    width: 95vw;
     background-color: rgba(243, 242, 247, 0.18);
     margin: auto;
     position: relative;
@@ -2279,6 +2310,7 @@ table.conclusions li {
     height: 35vh;
     border-radius: 1em;
     margin-bottom: 2em;
+    box-shadow: none;
   }
 
   .card-bottom {
@@ -2314,8 +2346,9 @@ table.conclusions li {
   }
 
   .click-button {
-    font-size: 1.1em;
+    font-size: 1em;
     margin-bottom: 0;
+    padding: 5%;
   }
 
   .name-desc {
@@ -2355,7 +2388,7 @@ table.conclusions li {
   }
 
   table.case-study-table {
-    width: 90%;
+    width: 100%;
 }
 
   table.mobile {
@@ -2363,11 +2396,12 @@ table.conclusions li {
   }
 
   td {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .casestudy {
-    width: 40vw;
+    width: 30vw;
+    padding: 2%;
 }
 
   .main-sections {
@@ -2398,15 +2432,19 @@ table.conclusions li {
   }
 
   .proj-img {
-    height: 550px;
-    width: auto;
+    width: 100%;
     z-index: 1;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
+    margin: 5% 0;
   }
+
+  table.personas-mobile {
+    display: none;
+}
 
   .bar.google {
     width: 294px;
@@ -2454,7 +2492,7 @@ table.conclusions li {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 440px;
+    margin-top: 65vw;
     z-index: -1;
   }
 
@@ -2526,9 +2564,7 @@ table.conclusions li {
   .case-sections {
     width: auto;
     margin: auto;
-    padding-bottom: 10%;
-    padding-bottom: 3%;
-    padding: 1em;
+    padding: 2em 1em;
   }
 
   .ui-problems {
@@ -2773,7 +2809,7 @@ flex-shrink: 0;
   }
 
   table.conclusions td {
-    font-size: 1.25em;
+    font-size: 1em;
     vertical-align: top;
     text-align: left;
     padding: 5px 20px;
@@ -3983,7 +4019,7 @@ cursor: pointer;
 
   .chart.pain {
     height: 40vh;
-    margin-top: -10vh;
+    margin-top: 2vh;
   }
 
   .dropdown .dropbtn {
