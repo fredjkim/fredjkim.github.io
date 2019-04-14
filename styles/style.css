@@ -192,7 +192,7 @@ table.personas-mobile td {
   font-size: 1em;
   vertical-align: top;
   text-align: left;
-  padding: 5px;
+  padding: 5px 0;
   line-height: 1.4;
 }
 
@@ -2157,7 +2157,7 @@ flex-shrink: 0;
       font-size: 1em;
       vertical-align: top;
       text-align: left;
-      padding: 5px 10px;
+      padding: 5px 20px;
       line-height: 1.4;
     }
 
@@ -2165,7 +2165,7 @@ flex-shrink: 0;
       font-size: 1.5em;
       text-align: left;
       color: #817872;
-      padding: 10px 0 0 0;
+      padding: 10px 0 0 20px;
       border-bottom: solid 1px #c8beb7;
     }
 
@@ -4016,10 +4016,19 @@ cursor: pointer;
     margin-top: 2vh;
   }
 
-
-  .chart.pain {
+  .chart.pain.sky {
+    margin-top: -10vh;
     height: 40vh;
+  }
+
+  .chart.pain.fourth {
     margin-top: 2vh;
+    height: 40vh;
+}
+
+  .chart.success {
+    height: 40vh;
+    margin-top:-10vh;
   }
 
   .dropdown .dropbtn {
