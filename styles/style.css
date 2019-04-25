@@ -3266,17 +3266,6 @@ flex-shrink: 0;
 
 @media (min-width: 1025px) {
 
-  .proj-img-landing-message{
-    width: 40vw;
-/* height: 90vh; */
-margin-right: 35vw;
-object-fit: contain;
-margin-top: 0;
-flex-shrink: 0;
-/*cursor: pointer;*/
-
-  }
-
   .brush-wrapper {
     position: absolute;
     z-index: -1;
@@ -3365,10 +3354,10 @@ flex-shrink: 0;
     display: flex;
     align-items: center;
     position: fixed;
-    width: 80vw;
+    width: 70vw;
     height: 50px;
     z-index: 2;
-    padding: 0 10vw;
+    padding: 0 15vw;
     top: 0; /* Stay on top */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
   }
@@ -3416,8 +3405,8 @@ flex-shrink: 0;
   }
 
   .landing-container img {
-    width: 12vw;
-    margin: 27vh auto 5vh auto;
+    width: 10vw;
+    margin: 30vh auto 5vh auto;
   }
 
   .landing-container h1 {
@@ -3602,7 +3591,7 @@ table.conclusions ul {
   }
 
   .proj-img-landing {
-    width: 55vw;
+    width: 45vw;
     /*min-height: 90vh;*/
     margin-left: 30vw;
     object-fit: contain;
@@ -3613,7 +3602,7 @@ table.conclusions ul {
   }
 
   .proj-img-landing-fourth {
-    width: 45vw;
+    width: 35vw;
 /* height: 90vh; */
 margin-left: 25vw;
 object-fit: contain;
@@ -3624,7 +3613,7 @@ cursor: pointer;
   }
 
   .proj-img-landing-music {
-    width: 55vw;
+    width: 45vw;
 height: auto;
 margin-right: 33vw;
 object-fit: contain;
@@ -3634,7 +3623,7 @@ cursor: pointer;
   }
 
   .proj-img-landing-branding {
-    width: 55vw;
+    width: 45vw;
     /* height: 90vh; */
     margin-left: -30vw;
     object-fit: contain;
@@ -3644,8 +3633,21 @@ cursor: pointer;
 
   }
 
+
+    .proj-img-landing-message{
+      width: 35vw;
+  /* height: 90vh; */
+  margin-right: 35vw;
+  object-fit: contain;
+  margin-top: 0;
+  flex-shrink: 0;
+  /*cursor: pointer;*/
+
+    }
+
+
     .proj-img-landing-photography {
-          width: 40vw;
+          width: 30vw;
           margin-right: -20vw;
           object-fit: cover;
           margin-top: 0;
@@ -3705,7 +3707,7 @@ cursor: pointer;
   }
 
   .name-desc {
-    padding: 0 10%;
+    padding: 0 15%;
     width: 25vw;
     margin: 0;
     display: flex;
